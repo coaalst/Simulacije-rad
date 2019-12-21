@@ -1,0 +1,166 @@
+\documentclass[a4paper,11pt]{book}
+
+% Paketi za nas jezik (optimalni)
+\usepackage{cmsrb}
+\usepackage[OT2,T1]{fontenc}
+\usepackage[serbian]{babel}
+
+
+\usepackage{lmodern}
+\usepackage{hyperref}
+
+
+\makeatletter
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+\title{\Huge \textbf{Modelovanje sistema za uzgoj} \\ \huge Modelovanje i simulacije}
+\author{\textsc{Aleksandar Stojanović RN97-2018}}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+%\mainmatter
+\chapter*{Uvod}
+
+\section*{Uzgoj u zastvorenom prostoru}
+Kada je reč o zatvorenim prostorima, u glavnom se misli na kontrolisano okruženje koje ima za cilj da olakša razvoj biljke pa kasnije i samih plodova autonomno uz što manju interakciju čoveka.
+
+Ovo se postiže uz pomoć raznih podsistema koji utiču na okruženje biljke u vidu regulacije temperature, vlažnosti ili čak samog ciklusa osvetljenja.
+\section*{Tradicionalan ili zatvoren uzgoj}
+Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije mogućnosti za ekspanzije, zatvoren pristup pruža kompletno kontrolu nad samim okruženjem. Pored toga biljka je kopletno izolovana od negativnih spoljašnjih faktora kao što su:
+
+\begin{itemize}
+  \item paraziti,
+  \item naglih oscilacija temperature,
+  \item kritične količine padavina.
+\end{itemize}
+
+
+\section*{Svrha rada}
+U ovom radu baviću se jednim sistemom za uzgoj kroz detaljnu analizu procesa kontrole okruzenja i davati svoje predloge za poboljšanje. Kao oslonac koristiću 12 koraka za izradu simulacija profesora 
+
+
+%%%%%%%%%%%%%%%%
+% NEW CHAPTER! %
+%%%%%%%%%%%%%%%%
+\chapter{Priprema}
+
+%\begin{chapquote}{Author's name, \textit{Source of this quote}}
+%``This is a quote and I don't know who said this.''
+%\end{chapquote}
+
+\section{Definisanje problema}
+Kada je reč o uzgoju u zatvorenim prostorima podrazumeva se da nam je sam prostor jako važan resurs i potrebno je iskoristiti ga što efikasnije. Ovim se postiže bolji protok vazduha što za sobom povlači lakšu kontrolu temperature.  \\
+
+Da bismo prostor koristili efektivno bitno je da unapred definišemo neke od funkcionalnosti našeg sistema. 
+
+Neke od funkcija koje treba podržati:
+
+1. Merenje i regulacija temperature,
+
+2. Merenje vlažnosti zemlje i ambijenta,
+
+3. Regulacija svetlosnog ciklusa,
+
+4. Regulacija brzine ventilatora,
+
+5. Zalivanje biljke,
+
+6. Logovanje \\ 
+
+\noindent Imajuci ove funkcije na umu mozemo odrediti grub plan projekta. U sledećoj tački ćemo da detaljo definisati svaku od ovih funkcija kako bismo formirali tehničku specifikaciju.
+
+\section{Definisanje cilja i plana projekta}
+Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo 
+
+\noindent \\ Budući da ovakav sistem zahteva kontinualan rad, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora.
+
+\subsection{Merenje temperature i regulacija}
+Merenje temperature je krucijalan korak jer je to jedan od glavnih faktora okruženja. Različite biljke zahtevaju različite uslove poput povećane vlage, stoga neophodno je koristiti adekvatan hardver za nase uslove. 
+
+\subsection{Merenje vlažnosti zemlje i ambijenta}
+Praćenjem vlažnosti zemlje nam omogućava da automatizovano zalivamo biljku u zavisnosti od njenih potreba. Za razliku od fiksnih ciklusa zalivanja kod kojih može doći do preteranog navodnjavanja ovde se mehanizam za navodnjavanje aktivira samo kada je to potrebno.
+
+\subsection{Regulacija svetlosnog ciklusa}
+Različite biljke u različitim fazama razvoja zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigurisati naš kontroler po parametrima biljke kako bismo joj pružili optimalne uslove.
+
+\subsection{Regulacija rada ventilatora}
+Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica ce se brže odnosno sporije hladiti.
+
+\subsection{Zalivanje biljke}
+Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Neophodno je osmisliti sistem za jednako distribuiranje vode po celoj saksiji kako bi vrednosti očitane sa senzora bile sto tačnije.
+
+\subsection{Logovanje}
+Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema.
+
+
+ 
+Pored ovih funkcionalnosti, dodat je jedan OLED ekran od 0.11'' kako bismo imali direktan feedback. Ovim smo znatno olakšali uvid u ponašanje sistema jer nam nije potrebna direkta konekcija sa računarom preko serial porta.
+
+\chapter{Izgradnja modela}
+
+\section{Konceptualizacija modela}
+
+\section{Kolekcija podataka}
+
+\section{Prevodženje modela}
+
+\section{Verifikacija}
+
+\section{Validacija}
+
+\chapter{Izvršavanje simulacije}
+
+\section{Dizajn eksperimenta}
+
+\section{Izvršavanje i analiza}
+
+\section{Dodatna izvršavanja}
+
+\chapter{Implementacija}
+
+\section{Dokumentacija i izveštaj}
+
+\section{Implementacija}
+
+\end{document}
+
+%\section*{Acknowledgements}
+%\begin{itemize}
+%\item A special word of thanks goes to Professor Don Knuth\footnote{\url{http://www-cs-faculty.stanford.edu/~uno/}} (for \TeX{}) and Leslie Lamport\footnote{\url{http://www.lamport.org/}} (for \LaTeX{}).
+%\item I'll also like to thank Gummi\footnote{\url{http://gummi.midnightcoding.org/}} developers and LaTeXila\footnote{\url{http://projects.gnome.org/latexila/}} development team for their awesome \LaTeX{} editors.
+%\item I'm deeply indebted my parents, colleagues and friends for their support and encouragement.
+%\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sample table                                        %
+% Source: www1.maths.leeds.ac.uk/latex/TableHelp1.pdf %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{table}[ht]
+ % \caption{Sample table} % title of Table
+  %\centering % used for centering table
+  %\begin{tabular}{c c c c}
+  % centered columns (4 columns)
+  %\hline\hline %inserts double horizontal lines
+  %S. No. & Column\#1 & Column\#2 & Column\#3 \\ [0.5ex]
+  % inserts table
+  %heading
+  %\hline % inserts single horizontal line
+  %1 & 50 & 837 & 970 \\
+  %2 & 47 & 877 & 230 \\
+  %3 & 31 & 25 & 415 \\
+  % & 35 & 144 & 2356 \\
+  %5 & 45 & 300 & 556 \\ [1ex] % [1ex] adds vertical space
+  %\hline %inserts single line
+  %\end{tabular}
+  %\label{table:nonlin} % is used to refer this table in the text
+  %\end{table}
