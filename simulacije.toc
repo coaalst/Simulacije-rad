@@ -8,16 +8,17 @@
 \contentsline {subsection}{\numberline {1.2.4}Regulacija rada ventilatora}{8}{subsection.1.2.4}%
 \contentsline {subsection}{\numberline {1.2.5}Zalivanje biljke}{8}{subsection.1.2.5}%
 \contentsline {subsection}{\numberline {1.2.6}Logovanje}{8}{subsection.1.2.6}%
-\contentsline {chapter}{\numberline {2}Izgradnja modela}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Konceptualizacija modela}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Kolekcija podataka}{9}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Prevodženje modela}{9}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Verifikacija}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Validacija}{9}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Izvršavanje simulacije}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dizajn eksperimenta}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Izvršavanje i analiza}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Dodatna izvršavanja}{11}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Implementacija}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dokumentacija i izveštaj}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Implementacija}{13}{section.4.2}%
+\contentsline {section}{\numberline {1.3}Tehnički detalji}{9}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Izgradnja modela}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Konceptualizacija modela}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Kolekcija podataka}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Prevodženje modela}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Verifikacija}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Validacija}{11}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Izvršavanje simulacije}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dizajn eksperimenta}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Izvršavanje i analiza}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Dodatna izvršavanja}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Implementacija}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacija i izveštaj}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementacija}{15}{section.4.2}%

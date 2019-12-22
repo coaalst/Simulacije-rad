@@ -34,7 +34,8 @@
 \section*{Uzgoj u zastvorenom prostoru}
 Kada je reč o zatvorenim prostorima, u glavnom se misli na kontrolisano okruženje koje ima za cilj da olakša razvoj biljke pa kasnije i samih plodova autonomno uz što manju interakciju čoveka.
 
-Ovo se postiže uz pomoć raznih podsistema koji utiču na okruženje biljke u vidu regulacije temperature, vlažnosti ili čak samog ciklusa osvetljenja.
+Ovo se postiže uz pomoć raznih podsistema koji prate i utiču na okruženje biljke.
+
 \section*{Tradicionalan ili zatvoren uzgoj}
 Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije mogućnosti za ekspanzije, zatvoren pristup pruža kompletno kontrolu nad samim okruženjem. Pored toga biljka je kopletno izolovana od negativnih spoljašnjih faktora kao što su:
 
@@ -44,9 +45,15 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
   \item kritične količine padavina.
 \end{itemize}
 
+\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod otkrivanja problema u ranim fazama.
+
 
 \section*{Svrha rada}
-U ovom radu baviću se jednim sistemom za uzgoj kroz detaljnu analizu procesa kontrole okruzenja i davati svoje predloge za poboljšanje. Kao oslonac koristiću 12 koraka za izradu simulacija profesora 
+Glavna svrha rada je razvoj jednostavnog i efektivnog sistema za uzgoj koji je jeftin i dovoljno jednostavan za upotrebu.\\
+
+\noindent U ovom radu prezentovaću svoj pristup dizajniranja ovakvog sistema. Detaljno cu analizirati principe rada individualnih podsistema koji sačinjavaju ovu jedinicu i simulirati njihov rad.
+
+
 
 
 %%%%%%%%%%%%%%%%
@@ -59,11 +66,11 @@ U ovom radu baviću se jednim sistemom za uzgoj kroz detaljnu analizu procesa ko
 %\end{chapquote}
 
 \section{Definisanje problema}
-Kada je reč o uzgoju u zatvorenim prostorima podrazumeva se da nam je sam prostor jako važan resurs i potrebno je iskoristiti ga što efikasnije. Ovim se postiže bolji protok vazduha što za sobom povlači lakšu kontrolu temperature.  \\
+Dizajniranje i izrada ovakvih sistema nije lak proces jer zahteva poznavanje vise ne tako povezanih domena nauke.
 
-Da bismo prostor koristili efektivno bitno je da unapred definišemo neke od funkcionalnosti našeg sistema. 
+Glavna prepreka je limitirana količina prostora koja nam je na raspolaganju. Kada je reč o uzgoju u zatvorenim prostorima podrazumeva se da nam je sam prostor jako važan resurs i potrebno je iskoristiti ga što efikasnije. Tek kada je prostor pravilno iskorišćen možemo započeti optimizaciju ostlaih delova sistema.
 
-Neke od funkcija koje treba podržati:
+Da bismo prostor koristili efektivno bitno je da unapred definišemo neke od funkcionalnosti našeg sistema: 
 
 1. Merenje i regulacija temperature,
 
@@ -80,9 +87,11 @@ Neke od funkcija koje treba podržati:
 \noindent Imajuci ove funkcije na umu mozemo odrediti grub plan projekta. U sledećoj tački ćemo da detaljo definisati svaku od ovih funkcija kako bismo formirali tehničku specifikaciju.
 
 \section{Definisanje cilja i plana projekta}
-Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo 
+Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo se osloniti na nekakvu upravljačku jedinicu koja ce biti zadužena za kontrolu celokupnog sistema. 
 
-\noindent \\ Budući da ovakav sistem zahteva kontinualan rad, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora.
+\noindent \\ Budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora.
+
+Kao monitor za feedback sistema koristicemo mali I2C\footnote{I2C protokol služi za serijsku komunikaciju sa mikrokontrolerima. Vise na: https://i2c.info/} OLED ekran velicine 0.11 inča kao dugoročno rešenje dok će serijski port biti primarno korišćen u početnim fazama izrade.
 
 \subsection{Merenje temperature i regulacija}
 Merenje temperature je krucijalan korak jer je to jedan od glavnih faktora okruženja. Različite biljke zahtevaju različite uslove poput povećane vlage, stoga neophodno je koristiti adekvatan hardver za nase uslove. 
@@ -102,9 +111,9 @@ Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Neophodn
 \subsection{Logovanje}
 Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema.
 
+U sledećep poglavlju zalazimo u tehničke detalje sistema 
 
- 
-Pored ovih funkcionalnosti, dodat je jedan OLED ekran od 0.11'' kako bismo imali direktan feedback. Ovim smo znatno olakšali uvid u ponašanje sistema jer nam nije potrebna direkta konekcija sa računarom preko serial porta.
+\section{Tehnički detalji}
 
 \chapter{Izgradnja modela}
 

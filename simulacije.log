@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  21 DEC 2019 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  21 DEC 2019 20:34
 entering extended mode
-**"c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/simulacije.tex"
-("c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/simulacije.tex"
+**"c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
+("c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
 LaTeX2e <2019-10-01> patch level 3
 ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
@@ -891,7 +891,7 @@ Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip43
-) ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\simulacije.aux")
+) ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
 \openout1 = `simulacije.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -948,7 +948,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\simulacije.out") ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\simulacije.out")
+ ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out") ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out")
 \@outlinefile=\write3
 \openout3 = `simulacije.out'.
 
@@ -982,7 +982,7 @@ File: omxcmsrbex.fd
 
 {C:/Users/Coa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
-] ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\simulacije.toc"
+] ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.toc"
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
 )
@@ -992,64 +992,75 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [3] [4
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 42.
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 43.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 42.
- [5] [6
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 43.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[5] [6
 
 ]
 Glava 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 85.
+(Font)              <9> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 85.
-[7] [8]
-Glava 2.
-[9
+(Font)              <5> on input line 92.
+[7]
+Underfull \hbox (badness 2689) in paragraph at lines 94--94
+[][][]\T1/lmr/m/n/9 I2C pro-to-kol slu-ºi za se-rij-sku ko-mu-ni-ka-ci-ju sa mi-kro-kon-tro-le-ri-ma. Vi-se na:
+ []
 
-] [10
+[8]
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 116.
+
+[9] [10
 
 ]
-Glava 3.
+Glava 2.
 [11] [12
 
 ]
+Glava 3.
+[13] [14
+
+]
 Glava 4.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
- ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\simulacije.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+ ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `simulacije.out' has not changed.
-(rerunfilecheck)             Checksum: 77EA892131C9165319DBB6AD2845EE65;1483.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
+(rerunfilecheck)             Checksum: FAD3E3D97D9E8F288CD2BF3B39A54B37;1546.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 6849 strings out of 492483
- 103073 string characters out of 3122494
+ 6855 strings out of 492483
+ 103370 string characters out of 3122494
  186372 words of memory out of 3000000
- 10998 multiletter control sequences out of 15000+200000
+ 11000 multiletter control sequences out of 15000+200000
  75367 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,33p,433b,393s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,8n,33p,488b,393s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\simulacije.pdf" (13 pages, 276437 bytes).
+Output written on "c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (15 pages, 287318 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
