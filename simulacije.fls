@@ -1,236 +1,240 @@
-PWD c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad
-INPUT C:\Users\Coa\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.tex
-OUTPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.log
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk11.clo
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk11.clo
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\cmsrb.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\cmsrb.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot2enc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot2enc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\x2enc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\x2enc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2aenc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2aenc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t2aenc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t2aenc.dfu
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd
-INPUT C:\Users\Coa\AppData\Local\MiKTeX\2.9\fonts\tfm\lh\lh-t2a\larm1095.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1095.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-serbian\serbian.ldf
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-serbian\serbian.ldf
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hycolor.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hycolor.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\xcolor-patch.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\xcolor-patch.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hopatch.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hopatch.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\intcalc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\intcalc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\bigintcalc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\bigintcalc.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\uniquecounter.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\uniquecounter.sty
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
-OUTPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2cmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2cmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2cmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2cmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\refcount.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\refcount.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-OUTPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-OUTPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi8.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy8.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmex10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\omxcmsrbex.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\omxcmsrbex.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmcsc10.tfm
-INPUT C:\Users\Coa\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmro10.tfm
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.toc
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.toc
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
-OUTPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.toc
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr9.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr9.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi9.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy9.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\uno_pinout.png
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\uno_pinout.png
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\uno_pinout.png
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\uno_pinout.png
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\uno_pinout.png
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT c:\Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr17.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr17.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr9.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr9.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmro10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmro10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
+PWD c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad
+INPUT C:\Users\Aleksandar\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.tex
+OUTPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.log
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk11.clo
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk11.clo
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\cmsrb.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\cmsrb.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot2enc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot2enc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\x2enc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\x2enc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2aenc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2aenc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t2aenc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t2aenc.dfu
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\MiKTeX\2.9\fonts\tfm\lh\lh-t2a\larm1095.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1095.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-serbian\serbian.ldf
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-serbian\serbian.ldf
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdfescape.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdfescape.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hycolor.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hycolor.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\xcolor-patch.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\xcolor-patch.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hopatch.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hopatch.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\letltxmacro.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\letltxmacro.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\intcalc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\intcalc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\bitset.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\bitset.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\bigintcalc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\bigintcalc.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\atveryend.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\atveryend.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\uniquecounter.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\uniquecounter.sty
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.aux
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.aux
+OUTPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.aux
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2cmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\ot2cmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2cmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\x2cmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\refcount.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\refcount.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+OUTPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.pdf
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+OUTPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmex10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\omxcmsrbex.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cmsrb\omxcmsrbex.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmcsc10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmro10.tfm
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.toc
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.toc
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
+OUTPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.toc
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr9.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr9.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi9.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy9.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cmsrb\cmsrbex.tfm
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr6.tfm
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\uno_pinout.png
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\uno_pinout.png
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\uno_pinout.png
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\uno_pinout.png
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\uno_pinout.png
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.aux
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT c:\Users\Aleksandar\Desktop\faks\simulacija i modelovanje\Simulacije-rad\simulacije.out
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr9.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr9.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmro10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmro10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\Aleksandar\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
