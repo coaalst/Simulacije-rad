@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  21 DEC 2019 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  22 DEC 2019 13:30
 entering extended mode
 **"c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
 ("c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
@@ -748,7 +748,25 @@ File: babel.def 2019/12/08 3.37 Babel common definitions
 \bbl@dirlevel=\count90
 )
 Package babel Info: Making " an active character on input line 46.
-)) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
+)) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmrsrbm/m/n --> OT1/lmr/m/n on input line 22.
@@ -796,9 +814,6 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
 ) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
@@ -822,7 +837,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen104
+\@linkdim=\dimen106
 \Hy@linkcounter=\count91
 \Hy@pagecounter=\count92
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
@@ -849,15 +864,15 @@ Package hyperref Info: Bookmarks ON on input line 4788.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5147.
-\XeTeXLinkMargin=\dimen105
+\XeTeXLinkMargin=\dimen107
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.sty"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\bigintcalc.sty"
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count95
-\Field@Width=\dimen106
-\Fld@charsize=\dimen107
+\Field@Width=\dimen108
+\Fld@charsize=\dimen109
 Package hyperref Info: Hyper figures OFF on input line 6418.
 Package hyperref Info: Link nesting OFF on input line 6423.
 Package hyperref Info: Hyper index ON on input line 6426.
@@ -934,7 +949,24 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Info: Composite with undeclared \v in encoding OT2 on input line 26.
 \symcmsrbex=\mathgroup4
-\AtBeginShipoutBox=\box27
+ ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen110
+\scratchbox=\box27
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen111
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks16
+) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
+\AtBeginShipoutBox=\box28
 Package hyperref Info: Link coloring OFF on input line 26.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -943,7 +975,7 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count101
+\c@section@level=\count107
 )
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
@@ -992,40 +1024,50 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [3] [4
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 43.
- ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 43.
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[5] [6
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 50.
+("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 50.
+ [5] [6
 
 ]
 Glava 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 92.
+(Font)              <9> on input line 89.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 92.
+(Font)              <5> on input line 89.
 [7]
-Underfull \hbox (badness 2689) in paragraph at lines 94--94
+<uno_pinout.png, id=162, 803.0pt x 803.0pt>
+File: uno_pinout.png Graphic file (type png)
+<use uno_pinout.png>
+Package pdftex.def Info: uno_pinout.png  used on input line 93.
+(pdftex.def)             Requested size: 360.0pt x 360.01111pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 93--94
+[][] 
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 95--95
 [][][]\T1/lmr/m/n/9 I2C pro-to-kol slu-ºi za se-rij-sku ko-mu-ni-ka-ci-ju sa mi-kro-kon-tro-le-ri-ma. Vi-se na:
  []
 
-[8]
+[8 <c:/Users/Coa/Desktop/modeli i simulacije/rad_simulacije/Simulacije-rad/uno_pinout.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 116.
+(hyperref)                removing `\textasciicaron' on input line 117.
 
 [9] [10
 
@@ -1039,28 +1081,28 @@ Glava 3.
 
 ]
 Glava 4.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  ("c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
 Package rerunfilecheck Info: File `simulacije.out' has not changed.
-(rerunfilecheck)             Checksum: FAD3E3D97D9E8F288CD2BF3B39A54B37;1546.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+(rerunfilecheck)             Checksum: 35DD769A3581337F0E7CDE03714930AB;1533.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 6855 strings out of 492483
- 103370 string characters out of 3122494
- 186372 words of memory out of 3000000
- 11000 multiletter control sequences out of 15000+200000
+ 7614 strings out of 492483
+ 114036 string characters out of 3122494
+ 195802 words of memory out of 3000000
+ 11730 multiletter control sequences out of 15000+200000
  75367 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,33p,488b,393s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (15 pages, 287318 bytes).
+Output written on "c:/Users\Coa\Desktop\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (15 pages, 576136 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
+ 254 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,13 @@
 \babel@toc {serbian}{}
 \contentsline {chapter}{\numberline {1}Priprema}{7}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Definisanje problema}{7}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Definisanje cilja i plana projekta}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Plana izrade projekta}{7}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Merenje temperature i regulacija}{8}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Merenje vlažnosti zemlje i ambijenta}{8}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Regulacija svetlosnog ciklusa}{8}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Regulacija rada ventilatora}{8}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Zalivanje biljke}{8}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}Logovanje}{8}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.2}Merenje vlažnosti zemlje i ambijenta}{9}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Regulacija svetlosnog ciklusa}{9}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Regulacija rada ventilatora}{9}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Zalivanje biljke}{9}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Logovanje}{9}{subsection.1.2.6}%
 \contentsline {section}{\numberline {1.3}Tehnički detalji}{9}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Izgradnja modela}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Konceptualizacija modela}{11}{section.2.1}%
