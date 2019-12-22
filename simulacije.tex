@@ -52,9 +52,6 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
 
 \noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod otkrivanja problema u ranim fazama.
 
-%%%%%%%%%%%%%%%%
-% NEW CHAPTER! %
-%%%%%%%%%%%%%%%%
 \chapter{Priprema}
 
 %\begin{chapquote}{Author's name, \textit{Source of this quote}}
@@ -62,6 +59,7 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
 %\end{chapquote}
 
 \section{Definisanje problema}
+Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo se osloniti na nekakvu upravljačku jedinicu koja ce biti zadužena za kontrolu celokupnog sistema uz oslonac na senzore. 
 
 Glavna prepreka je limitirana količina prostora koja nam je na raspolaganju. Kada je reč o uzgoju u zatvorenim prostorima podrazumeva se da nam je sam prostor jako važan resurs i potrebno je iskoristiti ga što efikasnije. Tek kada je prostor pravilno iskorišćen možemo započeti optimizaciju ostlaih delova sistema.
 
@@ -86,7 +84,6 @@ Da bismo prostor koristili efektivno bitno je da unapred definišemo neke od fun
 \noindent Imajuci ove funkcije na umu mozemo odrediti grub plan projekta. U sledećoj tački ćemo da detaljo definisati svaku od ovih funkcija i opisati hardver koji ćemo koristiti za izradu.
 
 \section{Plana izrade projekta}
-Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo se osloniti na nekakvu upravljačku jedinicu koja ce biti zadužena za kontrolu celokupnog sistema uz oslonac na senzore. 
 
 Sistem će biti smešten u kabinet dimenzija 35x35x60 koji je izradjen od metala. Ova veličina ce podržati biljku srednjih veličina. Neophodno je da unutrašnjost kabineta bude obložena reflektivnim materijalom koji će dobrineti da biljka iskoristi pun potencijal svetla.
 
@@ -113,17 +110,47 @@ Praćenjem vlažnosti zemlje nam omogućava da automatizovano zalivamo biljku u 
 Za vlagu ambijenta koristimo HR202 senzor vlage u vazduhu, a za zemljiste koristimo kapacitivni senzor LDTR-WG0236.
 
 \subsection{Regulacija svetlosnog ciklusa}
-Različite biljke u različitim fazama razvoja zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigurisati naš kontroler po parametrima biljke kako bismo joj pružili optimalne uslove.
+Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigurisati naš kontroler po parametrima biljke kako bismo joj pružili optimalne uslove. Interval osvetljenja je konfigurisan softverski i zavisno od istog kontroler utiče na relej. 
 
-Interval je konfigurisan softverski i zavisno od istog kontroler utiče na relej. Svetlo(150W - efektivno oko 90W) sa ugradjenim hladnjakom montira se na vrh kabineta.
+Što se izbora tehnologije svetla tiče u opticaju imamo sledece:
+
+\hrulefill
+\begin{itemize}
+  \item LED - Light emmiting diode
+  \item HID - High-intensitz discharge
+  \item Flourescent(CFL)
+\end{itemize}
+\hrulefill
+
+\begin{table}[ht]
+  \caption{Karakteristike različitih tehnologija}
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+   & CFL & HID & LED \\ \hline
+  Inicijalna cena & Nisko & Srednje & Nisko/skupo \\ \hline
+  Potrošnja & Nisko & Srednje/Visoko & Nisko \\ \hline
+  Efikasnost & Osrednje & Dobro & Dobro/Odlično \\ \hline
+  Udaljenost & Mala & Srednja & Srednja/Velika \\ \hline
+  \end{tabular}
+\end{table}
+
+U našem slučaju, koristi se LED svetlo(150W - efektivno oko 90W) sa ugradjenim hladnjakom. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa.
 
 \subsection{Regulacija rada ventilatora}
 Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica ce se brže odnosno sporije hladiti.
 
-\noindent Prebacivanjem sa 9V na 12V se vrši brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
+Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti samo prostor sa kojim radimo:
+
+\[ 35cm * 35cm * 60cm =  73500cm^3 = 2.595628ft^3\]
+
+Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slucaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu.
+
+\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 9V sa kratkoročnim pauzama vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
 
 \subsection{Zalivanje biljke}
-Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom koju cemo aktivirati takodje putem releja. Voda se kroz crevo ravnomerno ispusta u saksiju.
+Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom. Pumpa se aktivira putem releja kada senzor vlage u zemlji detektuje niske količine vlage.
+
+\noindent Od velikog značaja je ravnomerna distribucija vode unutar saksije kako bi senzor stvarao sto realniju sliku o stanju unutar iste.
 
 \subsection{Logovanje}
 Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema.
@@ -141,7 +168,7 @@ Generičan modul za sd kartice se koristi ovde koji ima sledeci pinout:
 \end{itemize}
 \hrulefill
 
-Ovo ga čini idealnim za naše uslove.
+Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. Pored toga na kartici cemo cuvati parametre za biljku koja se trenutno uzgaja.
 
 \section{Tehnički detalji}
 
