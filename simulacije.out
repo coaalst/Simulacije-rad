@@ -11,13 +11,14 @@
 \BOOKMARK [0][-]{chapter.2}{Izgradnja modela}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Konceptualizacija modela}{chapter.2}% 12
 \BOOKMARK [1][-]{section.2.2}{Kolekcija podataka}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{Prevodjenje modela}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.4}{Verifikacija}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.5}{Validacija}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Izvr\235avanje simulacije}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Dizajn eksperimenta}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Izvr\235avanje i analiza}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Dodatna izvr\235avanja}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Implementacija}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Dokumentacija i izve\235taj}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Implementacija}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.2.2.1}{Regulacija temperature}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Prevodjenje modela}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Verifikacija}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{Validacija}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Izvr\235avanje simulacije}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Dizajn eksperimenta}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Izvr\235avanje i analiza}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Dodatna izvr\235avanja}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Implementacija}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Dokumentacija i izve\235taj}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Implementacija}{chapter.4}% 24

@@ -98,6 +98,9 @@ Kao monitor za feedback sistema koristicemo mali I2C\footnote{I2C protokol služ
 \includegraphics[width=\textwidth]{oled.png}
 
 \subsection{Merenje temperature i regulacija}
+
+Čest problem sa kompaktnim zatvorenim baštama je visoka temperatura.
+
 Merenje temperature je krucijalan korak jer je to jedan od glavnih faktora okruženja. Različite biljke zahtevaju različite uslove poput povećane vlage, stoga neophodno je koristiti adekvatan hardver za nase uslove.\\ 
 
 \noindent DS18B20\footnote{Digitalni senzor toplote koji nudi 9-bit do 12-bit vrednosti toplote izražene u celizijusu. Vise na: https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf} je senzor po izboru iz razloga što je fabrički izolovan, ima dosta širi opseg vrednosti od očekivanog unutar sistema i napaja se sa 3.3V ili 5.5V.
@@ -117,7 +120,7 @@ Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigu
 \hrulefill
 \begin{itemize}
   \item LED - Light emmiting diode
-  \item HID - High-intensitz discharge
+  \item HID - High-intensiti discharge
   \item Flourescent(CFL)
 \end{itemize}
 \hrulefill
@@ -134,7 +137,21 @@ Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigu
   \end{tabular}
 \end{table}
 
-U našem slučaju, koristi se LED svetlo(150W - efektivno oko 90W) sa ugradjenim hladnjakom. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa.
+U našem slučaju, koristi se LED svetlo(150W - efektivno oko 100W) sa ugradjenim hladnjakom. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa. U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgate ima užasne linkove, rad ce biti na kraju.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
+
+\begin{table}[ht]
+  \caption{Proizvodnja toplote}
+  \begin{tabular}{|c|c|c|}
+  \hline
+    Tehnologija & Gubitak putem radijacije[\%] & Toplotni gubitak[\%] \\ \hline
+  Inkandescentne sijalice & 81 - 86 & 5 - 6 \\ \hline
+  fluorescentne sijalice & 30 - 32 & 44 \\ \hline
+  HID(živa) & 62 - 65 & 16 - 22 \\ \hline
+  HID(sodijum) & 57 - 74 & 7 - 20 \\ \hline
+  HID(metal halogene) & 47.3 - 63.3 & 10 - 23 \\ \hline
+  LED & 0 - 0.2 & 80 - 88 \\ \hline
+  \end{tabular}
+\end{table}
 
 \subsection{Regulacija rada ventilatora}
 Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica ce se brže odnosno sporije hladiti.
@@ -176,15 +193,27 @@ Slika sistema
 
 \chapter{Izgradnja modela}
 
-Kada smo definisali hardver sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema.
+Kada smo definisali hardver sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
 
 \section{Konceptualizacija modela}
 
 Kako bismo stvorili koncept modela moramo se vratiti na funkcije našeg sistema. Analizom funkcija i konkretnog hardvera pronalazimo matematički model koji predstavlja temelj naše simulacije.\\
 
-\noindent Kroz sledeću tačku cemo se se baviti prikupljanjem podataka vezanih za nas sistem.
 
 \section{Kolekcija podataka}
+
+Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se opredelili. Citanjem tehničke dokumentacije ili samih specifikacija proizvoda možemo stvoriti gruba očekivanja kako će se sistem ponašati u realnim uslovima. \\
+
+\noindent Bitno je imati na umu da vredonosti koje nam proizvodjač da uglavnom nisu merodavne pa je neophodno, ukoliko je to moguće, istraživanjem utvrditi realne performanse komponente. Ukoliko nije moguće naći iste, kako bi izbegli dodatne troskove, moramo uračunati do 30\% devijacije od datih.
+
+\subsection{Regulacija temperature}
+
+Za početak neophodno je odrediti izvore toplote unutar sistema. U našem slucaju to je LED svetlo od 150W koje, bez obzira na led tehnologiju, ipak proizvodi toplotu.\\
+
+
+
+
+
 
 
 
