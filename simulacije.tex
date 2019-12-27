@@ -136,7 +136,9 @@ Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigu
   \end{tabular}
 \end{table}
 
-U našem slučaju, koristi se LED svetlo(150W - efektivno oko 100W) sa ugradjenim hladnjakom. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa. U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgate ima užasne linkove, rad ce biti na kraju.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
+Zbog efikasnosti i povoljne cene koristićemo LED svetla za sistem. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa.
+
+U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgate ima užasne linkove, rad ce biti na kraju.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
 
 
 \begin{table}[ht]
@@ -154,6 +156,13 @@ U našem slučaju, koristi se LED svetlo(150W - efektivno oko 100W) sa ugradjeni
   \end{tabular}
 \end{table}
 
+Kada gledamo snagu svetla, preporučeno je koristiti minimum 
+\[35W po 1ft^2,\]
+
+gde je optimalno 50W a maksimalno 80W. Ako pogledamo prostor sistema koji iznosi 1225$cm^2$ što je $~$1.40$ft^2$, biće dovoljno koristiti LED svetlo snage 150W (efektivno oko 100W) sa ugradjenim hladnjakom.
+
+
+
 \subsection{Regulacija rada ventilatora}
 Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica ce se brže odnosno sporije hladiti.
 
@@ -163,12 +172,14 @@ Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti
 
 Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slucaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu.
 
-\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 9V sa kratkoročnim pauzama vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
+\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 5V sa kratkoročnim pauzama vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
 
 \subsection{Zalivanje biljke}
 Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom. Pumpa se aktivira putem releja kada senzor vlage u zemlji detektuje niske količine vlage.
 
 \noindent Od velikog značaja je ravnomerna distribucija vode unutar saksije kako bi senzor stvarao sto realniju sliku o stanju unutar iste.
+
+
 
 \subsection{Logovanje}
 Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema.
@@ -194,7 +205,7 @@ Slika sistema
 
 \chapter{Izgradnja modela}
 
-Kada smo definisali hardver sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
+Kada smo definisali hardverski plan sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
 
 \section{Konceptualizacija modela}
 
@@ -211,6 +222,24 @@ Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se op
 
 Za početak neophodno je odrediti izvore toplote unutar sistema. U našem slucaju to je LED svetlo od 150W koje, bez obzira na led tehnologiju, ipak proizvodi toplotu.\\
 
+Testiranjem je utvrdjeno sledece:
+
+\begin{table}[ht]
+  \caption{Zagrevanje - bez aktivne ventilacije}
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+    Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
+  0 & 25.3 & 9:48 \\ \hline
+  15 & 28 & 10:03 \\ \hline
+  30 & 29.1 & 10:18 \\ \hline
+  60 & 29.1 & 10:48 \\ \hline
+  \end{tabular}
+\end{table}
+
+Predstavljeno graficki pomoću Matlab-a:
+
+slika iz mat
 
 
 
