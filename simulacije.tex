@@ -32,14 +32,14 @@
 \chapter*{Uvod}
 
 \section*{Svrha rada}
-Ovaj rad je stvoren sa ciljem da opiše jednostavno i pristupačno rešenje za proizvodnju hrane u veštačkim uslovima.
+Ovaj rad je stvoren sa ciljem da opiše jednostavno i pristupačno rešenje za proizvodnju hrane u veštačkim uslovima.\\
 
 \noindent U ovom radu prezentovaću svoj pristup dizajniranja ovakvog sistema. Detaljno cu analizirati principe rada individualnih podsistema koji sačinjavaju ovu jedinicu i simulirati njihov rad.
 
 \section*{Uzgoj u zastvorenom prostoru}
-Ovakav vid proizvodnje sa urbanizacijom postaje sve popularniji. Kako gradovi postaju sve veći, potreba za organskom hranom raste te se ljudi okreću alternativnim metodama uzgoja.
+Ovakav vid proizvodnje sa urbanizacijom postaje sve popularniji. Kako gradovi postaju sve veći, potreba za organskom hranom raste te se ljudi okreću alternativnim metodama uzgoja.\\
 
-Kada je reč o zatvorenim prostorima, u glavnom se misli na kontrolisano okruženje koje ima za cilj da olakša razvoj biljke pa kasnije i samih plodova. Ovo se postiže adekvatnim planiranjem što podrazumeva razmatranje, ispunjavanjem svih uslova neophodnih za rast. 
+Kada je reč o zatvorenim prostorima, u glavnom se misli na kontrolisano okruženje koje ima za cilj da olakša razvoj biljke pa kasnije i samih plodova. Ovo se postiže adekvatnim planiranjem što podrazumeva razmatranje i ispunjavanje svih uslova neophodnih za rast. 
 
 \section*{Tradicionalan ili zatvoren uzgoj}
 Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije mogućnosti za ekspanzije, zatvoren pristup pruža kompletno kontrolu nad samim okruženjem. Pored toga biljka je kopletno izolovana od negativnih spoljašnjih faktora kao što su:
@@ -50,7 +50,7 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
   \item prevelike količine padavina.
 \end{itemize}
 
-\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod otkrivanja problema u ranim fazama.
+\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod otkrivanja problema u ranim fazama. Pored otkrivanja problema omogućava nam optimizaciju procesa uzgoja što dovodi do efikasnije proizvodnje.
 
 \chapter{Priprema}
 
@@ -61,9 +61,9 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
 \section{Definisanje problema}
 Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo se osloniti na nekakvu upravljačku jedinicu koja ce biti zadužena za kontrolu celokupnog sistema uz oslonac na senzore. 
 
-Glavna prepreka je limitirana količina prostora koja nam je na raspolaganju. Kada je reč o uzgoju u zatvorenim prostorima podrazumeva se da nam je sam prostor jako važan resurs i potrebno je iskoristiti ga što efikasnije. Tek kada je prostor pravilno iskorišćen možemo započeti optimizaciju ostlaih delova sistema.
+Glavna prepreka je limitirana količina prostora koja nam je na raspolaganju. Kada je reč o uzgoju u zatvorenim prostorima podrazumeva se da nam je sam prostor jako važan resurs i potrebno je iskoristiti ga što efikasnije. Tek kada je prostor pravilno iskorišćen možemo započeti izradu ostlaih delova sistema.
 
-Da bismo prostor koristili efektivno bitno je da unapred definišemo neke od funkcionalnosti našeg sistema: 
+Da bismo prostor koristili efektivno bitno je da unapred definišemo funkcionalnosti našeg sistema: 
 
 \hrulefill
 
@@ -81,15 +81,17 @@ Da bismo prostor koristili efektivno bitno je da unapred definišemo neke od fun
 
 \hrulefill
 
-\noindent Imajuci ove funkcije na umu mozemo odrediti grub plan projekta. U sledećoj tački ćemo da detaljo definisati svaku od ovih funkcija i opisati hardver koji ćemo koristiti za izradu.
+\noindent Imajuci ove funkcije na umu mozemo odrediti grub plan projekta. U sledećoj tački ćemo da detaljo definisati svaku od ovih funkcija i opisati hardver koji ćemo koristiti za izradu. Cilj nam je da hardver zauzme sto manje prostora kako bi ostalo što vise prostora za rad sa biljkom.
 
 \section{Plana izrade projekta}
 
-Sistem će biti smešten u kabinet dimenzija 35x35x60 koji je izradjen od metala. Ova veličina ce podržati biljku srednjih veličina. Neophodno je da unutrašnjost kabineta bude obložena reflektivnim materijalom koji će dobrineti da biljka iskoristi pun potencijal svetla.
+Sistem će biti smešten u kabinet dimenzija 35x35x60 koji je izradjen od metala. Ova veličina ce podržati biljku srednjih veličina. Neophodno je da unutrašnjost kabineta bude obložena reflektivnim materijalom koji će dobrineti da biljka iskoristi pun potencijal svetla. Pored reflektivnog materijala, unutrašnje ivice sistema je potrebno obložiti gumom kako bismo efektivno izolovali sistem od sredine.
 
-\noindent \\ Budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora. 
+Na vrh(plafon) kabineta neophodno je ugraditi nekakvo rešenje za fiksiranje svetla u vidu kuka. Za kuke se kače sajle koje će držati svetlosnu fiksturu. Na poledjini kabineta izbušićemo dve rupe za kačenje ventilatora koji ce obezbediti cirkulaciju.
 
-Pored stabilnosti ako pogledamo njegov dijagram(slika x.x) možemo uočiti da imamo izlaze od 3.3V i 5V sto je idealno za napajanje senzora i releja.
+\noindent \\ Budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora. Pored stabilnosti i male veličine ako pogledamo njegov dijagram možemo uočiti da imamo izlaze od 3.3V i 5V sto je idealno za napajanje senzora i releja.
+
+Kontroler če biti smešten izvan sistema sa spoljašnje strane unutar odeljka zajedno sa protobordom za povezivanje svih komponenti i relejem. Ovo će predstavljati mozak sistema odakle ćemo rutirati kablove. Sto se samog odeljka tiče, plastična razvodna kutija je dimenzija 20cm x 20cm x 5cm je sasvim dovoljna za naše potrebe.
 
 \includegraphics[width=\textwidth]{uno_pinout.png}
 
@@ -101,14 +103,20 @@ Kao monitor za feedback sistema koristicemo mali I2C\footnote{I2C protokol služ
 
 Čest problem sa kompaktnim zatvorenim baštama je visoka temperatura.
 
-Merenje temperature je krucijalan korak jer je to jedan od glavnih faktora okruženja. Različite biljke zahtevaju različite uslove poput povećane vlage, stoga neophodno je koristiti adekvatan hardver za nase uslove.\\ 
+Merenje temperature je krucijalan korak jer je to jedan od glavnih faktora okruženja. Različite biljke zahtevaju različite uslove poput povećane vlage, stoga neophodno je koristiti adekvatan hardver.\\ 
 
 \noindent DS18B20\footnote{Digitalni senzor toplote koji nudi 9-bit do 12-bit vrednosti toplote izražene u celizijusu. Vise na: https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf} je senzor po izboru iz razloga što je fabrički izolovan, ima dosta širi opseg vrednosti od očekivanog unutar sistema i napaja se sa 3.3V ili 5.5V.
 
-Regulaciju rešavamo korišćenjem ulaznih i izlaznih ventilatora.
+Regulaciju rešavamo korišćenjem ulaznih i izlaznih ventilatora(vise o regulaciji temperature će biti).
 
 \subsection{Merenje vlažnosti zemlje i ambijenta}
-Praćenjem vlažnosti zemlje nam omogućava da automatizovano zalivamo biljku u zavisnosti od njenih potreba. Za razliku od fiksnih ciklusa zalivanja kod kojih može doći do preteranog navodnjavanja ovde se mehanizam za navodnjavanje aktivira samo kada je to potrebno.
+Praćenjem vlažnosti zemlje nam omogućava da automatizovano zalivamo biljku u zavisnosti od njenih potreba. Za razliku od fiksnih ciklusa zalivanja kod kojih može doći do preteranog navodnjavanja ovde se mehanizam za navodnjavanje aktivira samo kada je to potrebno. Ovo sprečava prekomerno zalivanje sto dovodi do raznih problema poput:
+
+\begin{itemize}
+  \item Nedostatka kiseonika u zemlji za korenov sistem,
+  \item gljivično oboljenje korena,
+  \item nedostatak hranjivih materija usled prekomernog ispiranja
+\end{itemize}
 
 Za vlagu ambijenta koristimo HR202 senzor vlage u vazduhu, a za zemljiste koristimo kapacitivni senzor LDTR-WG0236.
 
@@ -136,7 +144,7 @@ Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigu
   \end{tabular}
 \end{table}
 
-Zbog efikasnosti i povoljne cene koristićemo LED svetla za sistem. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa.
+Zbog efikasnosti i povoljne cene koristićemo LED svetla za sistem. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa. Same dimenzije ovih fikstura su male pa ih to čini jos povoljnijim.
 
 U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgate ima užasne linkove, rad ce biti na kraju.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
 
@@ -172,17 +180,17 @@ Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti
 
 Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slucaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu.
 
-\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 5V sa kratkoročnim pauzama vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
+\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 5V vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
 
 \subsection{Zalivanje biljke}
-Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom. Pumpa se aktivira putem releja kada senzor vlage u zemlji detektuje niske količine vlage.
+Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom. Pumpa se aktivira putem releja kada senzor vlage u zemlji detektuje niske količine vlage. Pre puštanja u rad potrebno je konfigurisati senzor. Ako senzor nije adekvatno kalibrisan može doći do preteranog zalivanja ili čak prelivanja vode unutar sistema.
 
 \noindent Od velikog značaja je ravnomerna distribucija vode unutar saksije kako bi senzor stvarao sto realniju sliku o stanju unutar iste.
 
 
 
 \subsection{Logovanje}
-Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema.
+Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema. 
 
 Generičan modul za sd kartice se koristi ovde koji ima sledeci pinout:
 
@@ -197,8 +205,7 @@ Generičan modul za sd kartice se koristi ovde koji ima sledeci pinout:
 \end{itemize}
 \hrulefill
 
-Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. Pored toga na kartici cemo cuvati parametre za biljku koja se trenutno uzgaja.
-
+Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. Ovakvo logovanje nam omogućava da pratimo rad mašine uz oslonac na grafike kroz vreme. Budući da imamo punu kontrolu nad formatiranjem podataka, možemo se postarati da izlaz bude kompatabilan sa nekim od popularnih softverskih alata 
 \section{Tehnički detalji}
 
 Slika sistema
@@ -212,9 +219,11 @@ Kada smo definisali hardverski plan sistema možemo započeti izradu modela. U o
 Kako bismo stvorili koncept modela moramo se vratiti na funkcije našeg sistema. Analizom funkcija i konkretnog hardvera pronalazimo matematički model koji predstavlja temelj naše simulacije.\\
 
 
+
+
 \section{Kolekcija podataka}
 
-Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se opredelili. Citanjem tehničke dokumentacije ili samih specifikacija proizvoda možemo stvoriti gruba očekivanja kako će se sistem ponašati u realnim uslovima. \\
+Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se opredelili. Čitanjem tehničke dokumentacije ili samih specifikacija proizvoda možemo stvoriti gruba očekivanja kako će se sistem ponašati u realnim uslovima. \\
 
 \noindent Bitno je imati na umu da vredonosti koje nam proizvodjač da uglavnom nisu merodavne pa je neophodno, ukoliko je to moguće, istraživanjem utvrditi realne performanse komponente. Ukoliko nije moguće naći iste, kako bi izbegli dodatne troskove, moramo uračunati do 30\% devijacije od datih.
 
@@ -234,6 +243,19 @@ Testiranjem je utvrdjeno sledece:
   15 & 28 & 10:03 \\ \hline
   30 & 29.1 & 10:18 \\ \hline
   60 & 29.1 & 10:48 \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+  \caption{Zagrevanje - aktivan izduv na 40\% snage}
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+    Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
+  0 & 25.3 & 11:48 \\ \hline
+  15 & 26.5 & 12:03 \\ \hline
+  30 & 27.1 & 12:18 \\ \hline
+  60 & 27.1 & 12:48 \\ \hline
   \end{tabular}
 \end{table}
 
