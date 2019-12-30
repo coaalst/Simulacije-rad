@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{lmodern}
 \usepackage{hyperref}
+\usepackage{listings}
 
 
 \makeatletter
@@ -95,7 +96,7 @@ Kontroler če biti smešten izvan sistema sa spoljašnje strane unutar odeljka z
 
 \includegraphics[width=\textwidth]{uno_pinout.png}
 
-Kao monitor za feedback sistema koristicemo mali I2C\footnote{I2C protokol služi za serijsku komunikaciju sa mikrokontrolerima. Vise na: https://i2c.info/} OLED ekran velicine 0.11 inča kao dugoročno rešenje dok će serijski port biti primarno korišćen u početnim fazama izrade.
+Kao monitor za feedback sistema koristicemo mali I2C\footnote{I2C protokol služi za serijsku komunikaciju sa mikrokontrolerima. Vise na: https://i2c.info/} OLED ekran 128x32 veličine 0.91 inča kao dugoročno rešenje dok će serijski port biti primarno korišćen u početnim fazama izrade.
 
 \includegraphics[width=\textwidth]{oled.png}
 
@@ -205,14 +206,147 @@ Generičan modul za sd kartice se koristi ovde koji ima sledeci pinout:
 \end{itemize}
 \hrulefill
 
-Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. Ovakvo logovanje nam omogućava da pratimo rad mašine uz oslonac na grafike kroz vreme. Budući da imamo punu kontrolu nad formatiranjem podataka, možemo se postarati da izlaz bude kompatabilan sa nekim od popularnih softverskih alata 
-\section{Tehnički detalji}
+Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. \\
 
-Slika sistema
+Ovakvo logovanje nam omogućava da pratimo rad mašine uz oslonac na grafike kroz vreme. Budući da imamo punu kontrolu nad formatiranjem podataka, možemo se postarati da izlaz bude kompatabilan sa nekim od popularnih softverskih alata. 
+
+\section{Hardvesrki dizajn}
+
+Posto smo odredili komponente koje odgovaraju nasim uslovima možemo stovriti grubu šemu sistema. Budići da softver(Eescheme) ne podržava breadboard(protoboard), veze poput 5V i zemlje sa arduina sam kačio na isti izlaz. U praksi ovo je uradjeno "proširivanjem" sa protobordom.
+
+\includegraphics[width=\textwidth]{kontroler.png}
+
+Ulaze i izlaze modula kačimo direktno na kontroler. Na relej se kači svetlo, pumpa za vodu i ventilatori(na jedan terminal kačimo 9V, a na drugi 12V).
+
+\section{Softverski dizajn}
+
+\subsection{Pokretanje i princip rada}
+
+U inicijalnom setup petlji kontrolera inicijalizujemo sve potrebne biblioteke i promenljive. 
+
+Glavna petlja ce pratiti sledeći sablon rada:
+
+\hrulefill
+\begin{itemize}
+  \item Hvatanje temperature,
+  \item hvatanje vlage zemlje,
+  \item pokretanje pomoćne funckije koja odredjuje akcije u vidu zalivanja ili regulacije toplote,
+  \item zapisivanje podataka i akcija,
+  \item ispis na ekran.
+\end{itemize}
+\hrulefill
+
+\subsection{Temperatura}
+
+Hvatanje temperature vrsi se pozivom funkcije \verb|read_temperature()| koja će od senzora zatražiti trenutnu temperaturu. Ako je doslo do greske vratiće staru vrednost u protivnom biće vraćena očitana. 
+
+\begin{lstlisting}
+  /*
+  * Funkcija za citanje temperature preko senzora
+  * @return float - temp
+  */
+ float read_temperature(){
+   //Var za temperaturu
+   float tempC = sensors.getTempCByIndex(0);
+   
+   //Trazimo temperaturu
+   Serial.print("Hvatam temperaturu");
+   sensors.requestTemperatures();
+   Serial.println("uspeh");
+ 
+   Serial.print("Temperatura za device 1 (index 0) je: ");
+   Serial.println(tempC);
+ 
+   if(tempC != DEVICE_DISCONNECTED_C) return tempC;
+ 
+   //Exception
+   else Serial.println("Greska prilikom citanja!");
+   return null;
+ }
+\end{lstlisting}
+  
+\subsection{Vlaga zemlje}
+
+Što se vlage zemlje tiče proces je isti, funkcija izgleda ovako:
+
+\begin{lstlisting}
+  /*
+ * Funkcija za citanje vlage zemlje preko senzora
+ * @return float - soil_val
+ */
+float read_soil_moisture(){
+
+	Serial.print("Hvatam vlagu");
+
+	//citanje vlaznosti
+	int soil_val = analogRead(SENSOR_PIN);
+
+	//konverzija
+	soil_val = map(soil_val, 550, 0, 0, 100);
+
+	//ispis
+	Serial.print("Vlaga: ");
+	Serial.print(soil_val);
+
+	return soil_val;
+}
+  \end{lstlisting}
+
+  \subsection{Obrada učitanih vrednosti}
+
+  Obrada vrednosti vrši se pozivom funkcije \verb|process_inputs|
+
+  \begin{lstlisting}
+    /*
+    * Funkcija za kontrolu toka i logovanja
+    * @param temp_val - temperatura
+    * @param soil_val - vlaga
+    */
+   void process_inputs(float temp_val, float soil_val){
+   
+     if(temp_val>= 30)digitalWrite(relay1, HIGH);
+     else digitalWrite(relay1, LOW);
+   
+     if(temp_val<=20)digitalWrite(relay1, LOW);
+   
+   }
+    \end{lstlisting}
+
+  
+    \subsection{Ispis na ekran}
+
+    Ova funkcija prvo konvertuje vrednosti u stringove i smešta ih u char niz. Nakon što su smešteni u svoje bafere pozivaju se funkcije za ispis.
+
+    
+  \begin{lstlisting}
+    /*
+     * Funkcija za ispis na ekran
+     * @param temp_val - temperatura
+     * @param soil_val - vlaga
+     */
+    void output_values(float temp_val, float soil_val){
+
+	  //Pravimo char array za drawStr funkciju
+	  String temp_string = String(temp_val);
+	  String soil_string = String(soil_val);
+
+	  char temp_buffer[5];
+	  temp_string.toCharArray(temp_buffer, 5);
+
+	  char soil_buffer[5];
+	  soil_string.toCharArray(soil_buffer, 5);
+
+	  //Ispis na ekran
+	  temp_out(temp_buffer);
+	  delay(2000);
+	  soil_out(soil_buffer);  
+  }
+    \end{lstlisting}
+
 
 \chapter{Izgradnja modela}
 
-Kada smo definisali hardverski plan sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
+Kada smo definisali plan sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
 
 \section{Konceptualizacija modela}
 

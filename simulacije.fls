@@ -116,6 +116,12 @@ INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\re
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\uniquecounter.sty
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\uniquecounter.sty
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
 OUTPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
@@ -212,13 +218,21 @@ INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-ra
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\oled.png
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\oled.png
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\kontroler.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\kontroler.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\kontroler.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\kontroler.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\kontroler.png
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
@@ -245,3 +259,5 @@ INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy1
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb

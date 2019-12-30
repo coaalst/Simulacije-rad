@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  28 DEC 2019 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  29 DEC 2019 23:32
 entering extended mode
 **"c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
 ("c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
@@ -906,68 +906,90 @@ Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip43
-) ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
+) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
+\lst@mode=\count101
+\lst@gtempboxa=\box27
+\lst@token=\toks15
+\lst@length=\count102
+\lst@currlwidth=\dimen110
+\lst@column=\count103
+\lst@pos=\count104
+\lst@lostspace=\dimen111
+\lst@width=\dimen112
+\lst@newlines=\count105
+\lst@lineno=\count106
+\lst@maxwidth=\dimen113
+ ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
+\lst@framebox=\box28
+) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+ ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
 \openout1 = `simulacije.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 27.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 26.
-LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 27.
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 27.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\ot2cmr.fd"
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for X2/cmr/m/n on input line 26.
-LaTeX Font Info:    Trying to load font information for X2+cmr on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for X2/cmr/m/n on input line 27.
+LaTeX Font Info:    Trying to load font information for X2+cmr on input line 27.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\x2cmr.fd"
 File: x2cmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 27.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Composite with undeclared \v in encoding OT2 on input line 26.
+LaTeX Info: Composite with undeclared \v in encoding OT2 on input line 27.
 \symcmsrbex=\mathgroup4
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen110
-\scratchbox=\box27
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen111
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count109
+\scratchdimen=\dimen114
+\scratchbox=\box29
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen115
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks17
 ) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-\AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 26.
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 27.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\refcount.sty"
@@ -975,38 +997,39 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ) ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count107
+\c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
  ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out") ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out")
 \@outlinefile=\write3
 \openout3 = `simulacije.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 29.
+\c@lstlisting=\count116
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 30.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 29.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 30.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 29.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 30.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 29.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 30.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 29.
-LaTeX Font Info:    Trying to load font information for OMX+cmsrbex on input line 29.
+(Font)              <6> on input line 30.
+LaTeX Font Info:    Trying to load font information for OMX+cmsrbex on input line 30.
  ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cmsrb\omxcmsrbex.fd"
 File: omxcmsrbex.fd 
 ) [1
@@ -1024,37 +1047,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [3] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 48.
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 49.
 ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 48.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 49.
  [5] [6]
 Glava 1.
 [7
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 92.
+(Font)              <9> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 92.
-<uno_pinout.png, id=167, 803.0pt x 803.0pt>
+(Font)              <5> on input line 93.
+<uno_pinout.png, id=197, 803.0pt x 803.0pt>
 File: uno_pinout.png Graphic file (type png)
 <use uno_pinout.png>
-Package pdftex.def Info: uno_pinout.png  used on input line 96.
+Package pdftex.def Info: uno_pinout.png  used on input line 97.
 (pdftex.def)             Requested size: 360.0pt x 360.01111pt.
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 96--97
+Overfull \hbox (17.0pt too wide) in paragraph at lines 97--98
 [][] 
  []
 
@@ -1062,17 +1085,17 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 96--97
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-Underfull \hbox (badness 2689) in paragraph at lines 98--98
+Underfull \hbox (badness 2689) in paragraph at lines 99--99
 [][][]\T1/lmr/m/n/9 I2C pro-to-kol slu-ºi za se-rij-sku ko-mu-ni-ka-ci-ju sa mi-kro-kon-tro-le-ri-ma. Vi-se na:
  []
 
-<oled.png, id=178, 1156.32pt x 979.66pt>
+<oled.png, id=208, 1156.32pt x 979.66pt>
 File: oled.png Graphic file (type png)
 <use oled.png>
-Package pdftex.def Info: oled.png  used on input line 100.
+Package pdftex.def Info: oled.png  used on input line 101.
 (pdftex.def)             Requested size: 360.0pt x 304.99197pt.
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 100--101
+Overfull \hbox (17.0pt too wide) in paragraph at lines 101--102
 [][] 
  []
 
@@ -1080,70 +1103,107 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 100--101
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/uno_pinout.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 [10 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/oled.png>]
-Overfull \hbox (16.58904pt too wide) in paragraph at lines 155--165
+Overfull \hbox (16.58904pt too wide) in paragraph at lines 156--166
  [][] 
  []
 
 [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+<kontroler.png, id=236, 414.79968pt x 213.79875pt>
+File: kontroler.png Graphic file (type png)
+<use kontroler.png>
+Package pdftex.def Info: kontroler.png  used on input line 217.
+(pdftex.def)             Requested size: 360.0pt x 185.55972pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 217--218
+[][] 
+ []
+
+
+Underfull \vbox (badness 5316) has occurred while \output is active []
+
+ [13]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 241.
+ ("C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [14 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/kontroler.png>]
+Overfull \hbox (21.06308pt too wide) in paragraph at lines 257--258
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[15]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 209.
+(hyperref)                removing `\textasciicaron' on input line 295.
 
-[13] [14
+
+Overfull \hbox (1.35292pt too wide) in paragraph at lines 305--307
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.35292pt too wide) in paragraph at lines 327--329
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[16] [17] [18
 
 ]
 Glava 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
-[15] [16]
+[19] [20]
 Glava 3.
-[17
+[21
 
-] [18
+] [22
 
 ]
 Glava 4.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
-[19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
+[23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
  ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
 Package rerunfilecheck Info: File `simulacije.out' has not changed.
-(rerunfilecheck)             Checksum: 7F1524C1789D99AD5ECCAA08ED2F16D9;1606.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+(rerunfilecheck)             Checksum: 9F23BDE6C82F08DD607126BBE548B491;2028.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
  ) 
 Here is how much of TeX's memory you used:
- 7633 strings out of 492483
- 114314 string characters out of 3122494
- 198802 words of memory out of 3000000
- 11737 multiletter control sequences out of 15000+200000
- 75367 words of font info for 58 fonts, out of 3000000 for 9000
+ 9374 strings out of 492483
+ 137557 string characters out of 3122494
+ 230419 words of memory out of 3000000
+ 13370 multiletter control sequences out of 15000+200000
+ 75686 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,33p,649b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (19 pages, 1025270 bytes).
+ 39i,8n,36p,649b,1804s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on "c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (23 pages, 1082535 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
