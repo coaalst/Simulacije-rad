@@ -346,6 +346,8 @@ float read_soil_moisture(){
 
 \chapter{Izgradnja modela}
 
+Sistem se može posmatrati kao kontrolni sistem
+
 Kada smo definisali plan sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
 
 \section{Konceptualizacija modela}
@@ -365,7 +367,8 @@ Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se op
 
 Za početak neophodno je odrediti izvore toplote unutar sistema. U našem slucaju to je LED svetlo od 150W koje, bez obzira na led tehnologiju, ipak proizvodi toplotu.\\
 
-Testiranjem je utvrdjeno sledece:
+Sada moramo uvesti termin BTU\footnote{British termal unit - Po definiciji to je količina energije potrebna da se zagreje jedna funta (0.454 kg) vode tj. jedna desetina UK Galona od 39$^\circ$F (Farenhajta) na 40 $^\circ$F, tj. od 3,8 $^\circ$C (Celzijusa) do 4,4$^\circ$C. Vise na: https://sr.wikipedia.org/wiki/Btu} kako bismo lakse ordredili. Ako znamo da je 1 Watt = 3.41 BTU. Svetlo koje koristimo iznosi 150W pa opterećenje sistema iznosi ~341 BTU/h. Sledi računanje razlike ulazne i izlazne teperature vazduha. Ako pogledamo rezultate testa sistema bez aktivnog hladjenja:
+
 
 \begin{table}[ht]
   \caption{Zagrevanje - bez aktivne ventilacije}
@@ -380,6 +383,13 @@ Testiranjem je utvrdjeno sledece:
   \end{tabular}
 \end{table}
 
+Možemo uočiti da se temperatura sa sobne od 25.3$^\circ$C popela na 29.1$^\circ$C gde je stagnirala. Ako oduzmemo ove vrednosti dobićemo povećanje temperature of ~4$^\circ$C.
+
+Ako pogledamo sledeću formulu: 
+\[ CFM = BTU / (1.08 * \Delta T)\]
+
+Pa iz ovoga dobijamo da nam je potreban CFM = 78.9. Naši ventilatori iznose manje ali testom je utvrdjeno sledeće:
+
 \begin{table}[ht]
   \caption{Zagrevanje - aktivan izduv na 40\% snage}
   \centering
@@ -393,14 +403,7 @@ Testiranjem je utvrdjeno sledece:
   \end{tabular}
 \end{table}
 
-Predstavljeno graficki pomoću Matlab-a:
-
-slika iz mat
-
-
-
-
-
+Za naše potrebe temperatura od 20-30[$^\circ$C] je sasvim prihvatljiva što znači da je solucija za hladjenje adekvatna.
 
 
 \section{Prevodjenje modela}
