@@ -51,7 +51,7 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
   \item prevelike količine padavina.
 \end{itemize}
 
-\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod otkrivanja problema u ranim fazama. Pored otkrivanja problema omogućava nam optimizaciju procesa uzgoja što dovodi do efikasnije proizvodnje.
+\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod uočavanja problema u ranim fazama. Pored otkrivanja problema omogućava nam optimizaciju procesa uzgoja što dovodi do efikasnije proizvodnje.
 
 \chapter{Priprema}
 
@@ -88,11 +88,19 @@ Da bismo prostor koristili efektivno bitno je da unapred definišemo funkcionaln
 
 Sistem će biti smešten u kabinet dimenzija 35x35x60 koji je izradjen od metala. Ova veličina ce podržati biljku srednjih veličina. Neophodno je da unutrašnjost kabineta bude obložena reflektivnim materijalom koji će dobrineti da biljka iskoristi pun potencijal svetla. Pored reflektivnog materijala, unutrašnje ivice sistema je potrebno obložiti gumom kako bismo efektivno izolovali sistem od sredine.
 
-Na vrh(plafon) kabineta neophodno je ugraditi nekakvo rešenje za fiksiranje svetla u vidu kuka. Za kuke se kače sajle koje će držati svetlosnu fiksturu. Na poledjini kabineta izbušićemo dve rupe za kačenje ventilatora koji ce obezbediti cirkulaciju.
+Na vrh(plafon) kabineta neophodno je ugraditi nekakvo rešenje za fiksiranje svetla u vidu kuka. Za kuke se kače sajle koje će držati svetlosnu fiksturu. Na poledjini kabineta izbušićemo dve rupe za kačenje ventilatora koji ce obezbediti cirkulaciju. Donji otvor će služiti za unos svežeg vazduha dok se na gornji fiksira filter vazduha radi kontrole mirisa. Razlog ovoga je sledeći:
 
-\noindent \\ Budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora. Pored stabilnosti i male veličine ako pogledamo njegov dijagram možemo uočiti da imamo izlaze od 3.3V i 5V sto je idealno za napajanje senzora i releja.
+Ako pogledamo sledeće slike\footnote{AC infinity je kompanija koja se bavi solucijama za hladjenje, vise na: https://www.acinfinity.com/pages/technical-guides/cabinet-cooling-and-ventilation.html}
 
-Kontroler če biti smešten izvan sistema sa spoljašnje strane unutar odeljka zajedno sa protobordom za povezivanje svih komponenti i relejem. Ovo će predstavljati mozak sistema odakle ćemo rutirati kablove. Sto se samog odeljka tiče, plastična razvodna kutija je dimenzija 20cm x 20cm x 5cm je sasvim dovoljna za naše potrebe.
+\includegraphics[width=\textwidth]{10060.jpg}
+\includegraphics[width=\textwidth]{9015.jpg}
+
+Možemo uvideti da je najbolja konfiguracija ventilatora ona koja vazduh uvlači pri dnu, a topao izbacuje pri vrhu. 
+
+
+\noindent \\ Što se kontrolera tiče, budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora. Pored stabilnosti i male veličine ako pogledamo njegov dijagram možemo uočiti da imamo izlaze od 3.3V i 5V sto je idealno za napajanje senzora i releja.
+
+Kontroler če biti smešten izvan sistema sa spoljašnje strane unutar odeljka zajedno sa protobordom za povezivanje svih komponenti i releja. Ovo će predstavljati mozak sistema odakle ćemo rutirati kablove. Kao odeljak, plastična razvodna kutija je dimenzija 20cm x 20cm x 5cm je sasvim dovoljna za naše potrebe.
 
 \includegraphics[width=\textwidth]{uno_pinout.png}
 
@@ -121,6 +129,14 @@ Praćenjem vlažnosti zemlje nam omogućava da automatizovano zalivamo biljku u 
 
 Za vlagu ambijenta koristimo HR202 senzor vlage u vazduhu, a za zemljiste koristimo kapacitivni senzor LDTR-WG0236.
 
+Ovaj senzor vraća analognu vrednost što znaci da dobijamo kontinualan signal velike preciznosti. 
+
+Ako pogledamo sledeci grafik:
+
+\includegraphics[width=\textwidth]{digital-analog.jpg}
+
+Ovo znači da ćemo uvek dobijati neku vrednost vlage za razliku od digitalnih koji za neku vrednost X vraća 0 ako je izmerena manja ili 1 ako je veća. Tačnu vrednost valge za aktivaciju ćemo utvriditi merenjem. 
+
 \subsection{Regulacija svetlosnog ciklusa}
 Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigurisati naš kontroler po parametrima biljke kako bismo joj pružili optimalne uslove. Interval osvetljenja je konfigurisan softverski i zavisno od istog kontroler utiče na relej. 
 
@@ -145,8 +161,6 @@ Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigu
   \end{tabular}
 \end{table}
 
-Zbog efikasnosti i povoljne cene koristićemo LED svetla za sistem. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa. Same dimenzije ovih fikstura su male pa ih to čini jos povoljnijim.
-
 U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgate ima užasne linkove, rad ce biti na kraju.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
 
 
@@ -165,6 +179,9 @@ U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgat
   \end{tabular}
 \end{table}
 
+Zbog efikasnosti i povoljne cene koristićemo LED svetla za sistem. Ova tehnologija je najbolja opcija za nas jer imamo dovoljno prostora a pored toga je jako isplativa. Same dimenzije ovih fikstura su male pa ih to čini jos povoljnijim.
+
+
 Kada gledamo snagu svetla, preporučeno je koristiti minimum 
 \[35W po 1ft^2,\]
 
@@ -173,20 +190,20 @@ gde je optimalno 50W a maksimalno 80W. Ako pogledamo prostor sistema koji iznosi
 
 
 \subsection{Regulacija rada ventilatora}
-Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica ce se brže odnosno sporije hladiti.
+Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica će se brže odnosno sporije hladiti.
 
-Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti samo prostor sa kojim radimo:
+Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti zapreminu samog prostor sa kojim radimo:
 
 \[ 35cm * 35cm * 60cm =  73500cm^3 = 2.595628ft^3\]
 
-Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slucaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu.
+Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slučaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu a ne kroz sitne pukotine.
 
 \noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 5V vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
 
 \subsection{Zalivanje biljke}
 Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom. Pumpa se aktivira putem releja kada senzor vlage u zemlji detektuje niske količine vlage. Pre puštanja u rad potrebno je konfigurisati senzor. Ako senzor nije adekvatno kalibrisan može doći do preteranog zalivanja ili čak prelivanja vode unutar sistema.
 
-\noindent Od velikog značaja je ravnomerna distribucija vode unutar saksije kako bi senzor stvarao sto realniju sliku o stanju unutar iste.
+\noindent Od velikog značaja je ravnomerna distribucija vode unutar saksije kako bi senzor stvarao sto realniju sliku o stanju unutar iste. Rešenje za ovo je postavljanje cevi po obodu saksije. Cev je neophodno izbusiti ravnomerno tako da je jednak razmak i veličina rupa.
 
 
 
@@ -209,6 +226,8 @@ Generičan modul za sd kartice se koristi ovde koji ima sledeci pinout:
 Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. \\
 
 Ovakvo logovanje nam omogućava da pratimo rad mašine uz oslonac na grafike kroz vreme. Budući da imamo punu kontrolu nad formatiranjem podataka, možemo se postarati da izlaz bude kompatabilan sa nekim od popularnih softverskih alata. 
+
+U sledećim glavama ćemo definisati primer funkcije za logovanje zajedno sa formatom podataka.
 
 \section{Hardvesrki dizajn}
 
@@ -377,7 +396,7 @@ Sada moramo uvesti termin BTU\footnote{British termal unit - Po definiciji to je
   \hline
     Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
   0 & 25.3 & 9:48 \\ \hline
-  15 & 28 & 10:03 \\ \hline
+  15 & 27.4 & 10:03 \\ \hline
   30 & 29.1 & 10:18 \\ \hline
   60 & 29.1 & 10:48 \\ \hline
   \end{tabular}
@@ -396,20 +415,50 @@ Pa iz ovoga dobijamo da nam je potreban CFM = 78.9. Naši ventilatori iznose man
   \begin{tabular}{|c|c|c|}
   \hline
     Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
-  0 & 25.3 & 11:48 \\ \hline
+  0 & 25.1 & 11:48 \\ \hline
   15 & 26.5 & 12:03 \\ \hline
   30 & 27.1 & 12:18 \\ \hline
   60 & 27.1 & 12:48 \\ \hline
   \end{tabular}
 \end{table}
 
+Uključivanjem ventilatora na samo 40\% postižemo sniženje temperature za 2$^\circ$C. Ako iskoristimo pun potencijal istog možemo održati sobnu temperaturu.
+
 Za naše potrebe temperatura od 20-30[$^\circ$C] je sasvim prihvatljiva što znači da je solucija za hladjenje adekvatna.
 
+\subsection{Regulacija zalivanja}
+
+Zalivanje vrši se putem pumpe za manje fontane. Po specifikaciji proizvodjača protok vode iznosi $Q = 150 l/h$. Testiranjem je utvrdjeno sledeće:
+
+\begin{table}[ht]
+  \caption{Rad pumpe za vodu}
+  \centering
+  \begin{tabular}{|c|c|}
+  \hline
+    Trajanje[sekunde] & Količina vode u posudi[$l$]\\ \hline
+  0 & 0 \\ \hline
+  15 & 0.5 \\ \hline
+  30 & 1.2 \\ \hline
+  60 & 2.4 \\ \hline
+  \end{tabular}
+\end{table}
+
+Testiranjem je utvrdjena tačnost specifikacije i sada nam ostaje da odredimo dužinu vremenskog perioda za koji će relej držati pumpu otvorenom.
+
+Saksija koju ćemo koristiti ovde iznosi $1.5l$ što znači da ako pogledamo tabelu, možemo uočiti da je $~10s$ sasvim dovoljno da se potopi zemlja unutar saksije.
+
+Ovo nije optimalna količina vode ali nam pruža sigurnost od prelivanja. Pumpa će se aktivirati opet ukoliko vlažnost zemlje ne odgovara našem standardu.
+
+\subsection{Regulacija svetlosnog ciklusa}
+
+Svetlosni ciklus je definisan parametrima biljke. Biljke se razlikuju po dužini svetlosnog intervala, stoga mi ćemo uzeti "12-12" interval. 
+
+Imajući na umu da je svetlo glavni izvor toplotne energije unutar sistema, neophodno je isključiti ventilatore tokom "mračnog" perioda kako bi temperatura ostala u poželjnom opsegu.
 
 \section{Prevodjenje modela}
 
 \section{Verifikacija}
-
+ 
 \section{Validacija}
 
 \chapter{Izvršavanje simulacije}
