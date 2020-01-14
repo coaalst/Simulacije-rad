@@ -51,7 +51,9 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
   \item prevelike količine padavina.
 \end{itemize}
 
-\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod uočavanja problema u ranim fazama. Pored otkrivanja problema omogućava nam optimizaciju procesa uzgoja što dovodi do efikasnije proizvodnje.
+\noindent Sama činjenica da je biljka u izolovanom okruženju nam omogućava da bliže pratimo njen razvoj. Ovo posebno dolazi do izražaja kod uočavanja problema u ranim fazama kada je jedinka najosetljivija što se tiče uticaja okoline.
+
+Pored otkrivanja problema omogućava nam optimizaciju procesa uzgoja što dovodi do efikasnije proizvodnje. Pod ovim se podrazumeva uzgoj bilja vrhunskog kvaliteta i visokog prinosa u celogodišnjoj proizvodnji bez ograničenja u pogledu sezone ili optimalnih uslova gajenja, kako u atmosferi tako i u zoni ukorenjavanja gajenih biljaka. Precizna, manuelna ili automatska kontrola temperature i relativna vlažnost vazduha, provetravanje, ishrana i navodnjavanje i održavanje idealnog vodnog i vazdušnog režima zemljišta ili supstrata doprinosi eliminisanju ili maksimalnom smanjenju potencijalnog rizika.
 
 \chapter{Priprema}
 
@@ -86,6 +88,8 @@ Da bismo prostor koristili efektivno bitno je da unapred definišemo funkcionaln
 
 \section{Plana izrade projekta}
 
+\subsection{Jedinica}
+
 Sistem će biti smešten u kabinet dimenzija 35x35x60 koji je izradjen od metala. Ova veličina ce podržati biljku srednjih veličina. Neophodno je da unutrašnjost kabineta bude obložena reflektivnim materijalom koji će dobrineti da biljka iskoristi pun potencijal svetla. Pored reflektivnog materijala, unutrašnje ivice sistema je potrebno obložiti gumom kako bismo efektivno izolovali sistem od sredine.
 
 Na vrh(plafon) kabineta neophodno je ugraditi nekakvo rešenje za fiksiranje svetla u vidu kuka. Za kuke se kače sajle koje će držati svetlosnu fiksturu. Na poledjini kabineta izbušićemo dve rupe za kačenje ventilatora koji ce obezbediti cirkulaciju. Donji otvor će služiti za unos svežeg vazduha dok se na gornji fiksira filter vazduha radi kontrole mirisa. Razlog ovoga je sledeći:
@@ -97,13 +101,14 @@ Ako pogledamo sledeće slike\footnote{AC infinity je kompanija koja se bavi solu
 
 Možemo uvideti da je najbolja konfiguracija ventilatora ona koja vazduh uvlači pri dnu, a topao izbacuje pri vrhu. 
 
-
-\noindent \\ Što se kontrolera tiče, budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudmi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora. Pored stabilnosti i male veličine ako pogledamo njegov dijagram možemo uočiti da imamo izlaze od 3.3V i 5V sto je idealno za napajanje senzora i releja.
+\subsection{Kontroler}
+\noindent \\ Što se kontrolera tiče, budući da ovakav sistem zahteva kontinualan rad sto podrazumeva dugoročno opterećenje, Adruino Uno\footnote{Arduino Uno je open-source rešenje u vidu kontrolera za IoT projekte koji pruža mnoštvo mogućnosti. Vise na: https://www.arduino.cc/en/Guide/Introduction} je idealno rešenje jer nudi stabilnost pod dugoročnim radom i jednostavnu integraciju senzora. Pored stabilnosti i male veličine ako pogledamo njegov dijagram možemo uočiti da imamo izlaze od 3.3V i 5V sto je idealno za napajanje senzora i releja.
 
 Kontroler če biti smešten izvan sistema sa spoljašnje strane unutar odeljka zajedno sa protobordom za povezivanje svih komponenti i releja. Ovo će predstavljati mozak sistema odakle ćemo rutirati kablove. Kao odeljak, plastična razvodna kutija je dimenzija 20cm x 20cm x 5cm je sasvim dovoljna za naše potrebe.
 
 \includegraphics[width=\textwidth]{uno_pinout.png}
 
+\subsection{Monitor}
 Kao monitor za feedback sistema koristicemo mali I2C\footnote{I2C protokol služi za serijsku komunikaciju sa mikrokontrolerima. Vise na: https://i2c.info/} OLED ekran 128x32 veličine 0.91 inča kao dugoročno rešenje dok će serijski port biti primarno korišćen u početnim fazama izrade.
 
 \includegraphics[width=\textwidth]{oled.png}
@@ -116,7 +121,7 @@ Merenje temperature je krucijalan korak jer je to jedan od glavnih faktora okru�
 
 \noindent DS18B20\footnote{Digitalni senzor toplote koji nudi 9-bit do 12-bit vrednosti toplote izražene u celizijusu. Vise na: https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf} je senzor po izboru iz razloga što je fabrički izolovan, ima dosta širi opseg vrednosti od očekivanog unutar sistema i napaja se sa 3.3V ili 5.5V.
 
-Regulaciju rešavamo korišćenjem ulaznih i izlaznih ventilatora(vise o regulaciji temperature će biti).
+Regulaciju rešavamo korišćenjem ulaznih i izlaznih ventilatora(vise o regulaciji temperature kasnije u radu).
 
 \subsection{Merenje vlažnosti zemlje i ambijenta}
 Praćenjem vlažnosti zemlje nam omogućava da automatizovano zalivamo biljku u zavisnosti od njenih potreba. Za razliku od fiksnih ciklusa zalivanja kod kojih može doći do preteranog navodnjavanja ovde se mehanizam za navodnjavanje aktivira samo kada je to potrebno. Ovo sprečava prekomerno zalivanje sto dovodi do raznih problema poput:
@@ -135,9 +140,21 @@ Ako pogledamo sledeci grafik:
 
 \includegraphics[width=\textwidth]{digital-analog.jpg}
 
-Ovo znači da ćemo uvek dobijati neku vrednost vlage za razliku od digitalnih koji za neku vrednost X vraća 0 ako je izmerena manja ili 1 ako je veća. Tačnu vrednost valge za aktivaciju ćemo utvriditi merenjem. 
+Ovo znači da ćemo uvek dobijati neku vrednost vlage za razliku od digitalnih koji za neku vrednost X vraća 0 ako je izmerena manja ili 1 ako je veća. Tačnu vrednost valge za aktivaciju ćemo utvriditi merenjem.
 
-\subsection{Regulacija svetlosnog ciklusa}
+\subsection{Regulacija rada ventilatora}
+Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica će se brže odnosno sporije hladiti.
+
+Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti zapreminu samog prostor sa kojim radimo:
+
+\[ 35cm * 35cm * 60cm =  73500cm^3 = 2.595628ft^3\]
+
+Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slučaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu a ne kroz sitne pukotine.
+
+\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 5V vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. Kasnije u radu ćemo zaći dublje na ovu temu kada nam budu poznati izvori toplote.
+
+
+\subsection{Svetlo i zagrevanje}
 Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigurisati naš kontroler po parametrima biljke kako bismo joj pružili optimalne uslove. Interval osvetljenja je konfigurisan softverski i zavisno od istog kontroler utiče na relej. 
 
 Što se izbora tehnologije svetla tiče u opticaju imamo sledece:
@@ -185,27 +202,51 @@ Zbog efikasnosti i povoljne cene koristićemo LED svetla za sistem. Ova tehnolog
 Kada gledamo snagu svetla, preporučeno je koristiti minimum 
 \[35W po 1ft^2,\]
 
-gde je optimalno 50W a maksimalno 80W. Ako pogledamo prostor sistema koji iznosi 1225$cm^2$ što je $~$1.40$ft^2$, biće dovoljno koristiti LED svetlo snage 150W (efektivno oko 100W) sa ugradjenim hladnjakom.
+gde je optimalno 50W a maksimalno 80W. Ako pogledamo prostor sistema koji iznosi 1225$cm^2$ što je $~$1.40$ft^2$, biće dovoljno koristiti LED svetlo snage 150W (efektivno oko 100W) sa ugradjenim hladnjakom.\\
+
+Sada moramo uvesti termin BTU\footnote{British termal unit - Po definiciji to je količina energije potrebna da se zagreje jedna funta (0.454 kg) vode tj. jedna desetina UK Galona od 39$^\circ$F (Farenhajta) na 40 $^\circ$F, tj. od 3,8 $^\circ$C (Celzijusa) do 4,4$^\circ$C. Vise na: https://sr.wikipedia.org/wiki/Btu}. Ako znamo da je 1 Watt = 3.41 BTU. Svetlo koje koristimo iznosi 100W pa opterećenje sistema iznosi ~341 BTU/h. Sledi računanje razlike ulazne i izlazne teperature vazduha. Ako pogledamo rezultate testa sistema bez aktivnog hladjenja:
 
 
+\begin{table}[ht]
+  \caption{Zagrevanje - bez aktivne ventilacije}
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+    Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
+  0 & 25.3 & 9:48 \\ \hline
+  15 & 27.4 & 10:03 \\ \hline
+  30 & 29.1 & 10:18 \\ \hline
+  60 & 29.1 & 10:48 \\ \hline
+  \end{tabular}
+\end{table}
 
-\subsection{Regulacija rada ventilatora}
-Ventilatori nam koriste za razmenu vazduha sa okolinom. Sa druge strane, kako utičemo na njihovu brzinu jedinica će se brže odnosno sporije hladiti.
+Možemo uočiti da se temperatura sa sobne od 25.3$^\circ$C popela na 29.1$^\circ$C gde je stagnirala. Ako oduzmemo ove vrednosti dobićemo povećanje temperature of $\Delta T =$~4$^\circ$C.
 
-Da bismo pronašli odgovarajuću veličinu ventilatora za sistem moramo odrediti zapreminu samog prostor sa kojim radimo:
+Ako pogledamo sledeću formulu: 
+\[ CFM = BTU / (1.08 * \Delta T)\]
 
-\[ 35cm * 35cm * 60cm =  73500cm^3 = 2.595628ft^3\]
+Pa iz ovoga dobijamo da nam je potreban CFM = 78.9. Naši ventilatori iznose manje ali testom je utvrdjeno sledeće:\\
 
-Iz ovoga vidimo da su nam dovoljno obicni 12V ventilatori. Budući da se na izlaz kači filter vazduha koji u sebi sadrži dva 60mm ventilatora koji po specifikaciji pomeraju 38.35cfm a nasa jedinica ima samo ~2.5, na ulaz možemo staviti jedan ventilator od 120mm koji cemo uključivati u slučaju da nam temperatura predje dozvoljenu. Ovo radimo sa ciljem da unutar jedinice stvorimo negativni pritisak (izbacuje se vise nego sto ulazi) kako bi obezbedili da nam vazduh izlazi samo na predvidjenom mestu a ne kroz sitne pukotine.
+\begin{table}[ht]
+  \caption{Zagrevanje - aktivan izduv na 40\% snage}
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+    Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
+  0 & 25.1 & 11:48 \\ \hline
+  15 & 26.5 & 12:03 \\ \hline
+  30 & 27.1 & 12:18 \\ \hline
+  60 & 27.1 & 12:48 \\ \hline
+  \end{tabular}
+\end{table}
 
-\noindent Prebacivanjem izduva sa 9V na 12V i ukljucivanjem usisa na 5V vrši se brža razmena toplote dok se temperature ne vrati na dozvoljeni nivo. 
+Uključivanjem ventilatora na samo 40\% postižemo sniženje temperature za 2$^\circ$C. Ako iskoristimo pun potencijal istog možemo održati sobnu temperaturu.
+Za naše potrebe temperatura od 20-30$^\circ$C je sasvim prihvatljiva što znači da je solucija za hladjenje adekvatna.
 
 \subsection{Zalivanje biljke}
 Zalivanje biljke je jedan od elementarnih zahteva koje moramo ispuniti. Za ovo se koristi pumpa za vodu od 12V koja je potopljena u kanistar sa vodom. Pumpa se aktivira putem releja kada senzor vlage u zemlji detektuje niske količine vlage. Pre puštanja u rad potrebno je konfigurisati senzor. Ako senzor nije adekvatno kalibrisan može doći do preteranog zalivanja ili čak prelivanja vode unutar sistema.
 
 \noindent Od velikog značaja je ravnomerna distribucija vode unutar saksije kako bi senzor stvarao sto realniju sliku o stanju unutar iste. Rešenje za ovo je postavljanje cevi po obodu saksije. Cev je neophodno izbusiti ravnomerno tako da je jednak razmak i veličina rupa.
-
-
 
 \subsection{Logovanje}
 Logovanje nam omogućava detaljnu analizu procesa i samog rada naše mašine ako se korektno implementira. Znatno olakšava otkrivanje greške ili kvara, pomaže u rešavanju i služi kao output sistema. 
@@ -223,15 +264,15 @@ Generičan modul za sd kartice se koristi ovde koji ima sledeci pinout:
 \end{itemize}
 \hrulefill
 
-Ovo ga čini idealnim za naše uslove. Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. \\
+Ovo ga čini idealnim za naše uslove jer nam nudi mogućnost napajanja preko 3.3V ili 5V. \\
 
-Ovakvo logovanje nam omogućava da pratimo rad mašine uz oslonac na grafike kroz vreme. Budući da imamo punu kontrolu nad formatiranjem podataka, možemo se postarati da izlaz bude kompatabilan sa nekim od popularnih softverskih alata. 
+Na kartici će se beleziti svaki input koji sistem primi zajedno sa akcijom koja je izvrsena kroz vreme. Ovakvo logovanje nam omogućava da pratimo rad mašine uz oslonac na grafike kroz vreme. Budući da imamo punu kontrolu nad formatiranjem podataka, možemo se postarati da izlaz bude kompatabilan sa nekim od popularnih softverskih alata. 
 
 U sledećim glavama ćemo definisati primer funkcije za logovanje zajedno sa formatom podataka.
 
 \section{Hardvesrki dizajn}
 
-Posto smo odredili komponente koje odgovaraju nasim uslovima možemo stovriti grubu šemu sistema. Budići da softver(Eescheme) ne podržava breadboard(protoboard), veze poput 5V i zemlje sa arduina sam kačio na isti izlaz. U praksi ovo je uradjeno "proširivanjem" sa protobordom.
+Posto smo odredili komponente koje odgovaraju nasim uslovima možemo stovriti grubu šemu sistema. Budići da softver(Eescheme) ne podržava breadboard(protoboard), veze poput 5V i zemlje sa arduina sam kačio na isti izlaz. 
 
 \includegraphics[width=\textwidth]{kontroler.png}
 
@@ -265,10 +306,10 @@ Hvatanje temperature vrsi se pozivom funkcije \verb|read_temperature()| koja će
   * @return float - temp
   */
  float read_temperature(){
-   //Var za temperaturu
+   // Var za temperaturu
    float tempC = sensors.getTempCByIndex(0);
    
-   //Trazimo temperaturu
+   // Trazimo temperaturu
    Serial.print("Hvatam temperaturu");
    sensors.requestTemperatures();
    Serial.println("uspeh");
@@ -278,7 +319,7 @@ Hvatanje temperature vrsi se pozivom funkcije \verb|read_temperature()| koja će
  
    if(tempC != DEVICE_DISCONNECTED_C) return tempC;
  
-   //Exception
+   // Exception
    else Serial.println("Greska prilikom citanja!");
    return null;
  }
@@ -297,13 +338,12 @@ float read_soil_moisture(){
 
 	Serial.print("Hvatam vlagu");
 
-	//citanje vlaznosti
+	// Citanje vlaznosti
 	int soil_val = analogRead(SENSOR_PIN);
 
-	//konverzija
+	// Konverzija
 	soil_val = map(soil_val, 550, 0, 0, 100);
 
-	//ispis
 	Serial.print("Vlaga: ");
 	Serial.print(soil_val);
 
@@ -322,12 +362,27 @@ float read_soil_moisture(){
     * @param soil_val - vlaga
     */
    void process_inputs(float temp_val, float soil_val){
-   
-     if(temp_val>= 30)digitalWrite(relay1, HIGH);
-     else digitalWrite(relay1, LOW);
-   
-     if(temp_val<=20)digitalWrite(relay1, LOW);
-   
+    
+     // Aktivacija pumpe
+     if(soil_val < SOIL_MOISTURE_TRESHOLD) digitalWrite(relay4, LOW);
+
+     // Palimo 12V
+     if(temp_val>= 30){
+      digitalWrite(relay1, HIGH);
+      digitalWrite(relay2, LOW);
+     }
+
+     // Gasimo oba
+     if(temp_val<=20){
+       digitalWrite(relay1, HIGH);
+       digitalWrite(relay2, HIGH);
+     }
+
+     // Palimo 9V
+     else{
+       digitalWrite(relay1, HIGH);
+       digitalWrite(relay2, LOW);
+     }
    }
     \end{lstlisting}
 
@@ -365,14 +420,26 @@ float read_soil_moisture(){
 
 \chapter{Izgradnja modela}
 
-Sistem se može posmatrati kao kontrolni sistem
+Kada smo definisali plan sistema možemo započeti izradu modela. Za početak odredjujemo tok operacija koje naš sistem treba da izvrši. Imajući na umu da modelujemo kontroler sistema, možemo ga posmatrati kao automat. Po definicija automata, mi modelujemo prelaze stanja koji su elementi nekog konačnog skupa stanja Q. Stoga, osnovni tok operacija se može predstaviti flowchart-om koji izgleda ovako:
 
-Kada smo definisali plan sistema možemo započeti izradu modela. U ovoj glavi posvetićemo se parametrima i njihovoj korelaciji unutar sistema. Kada su nam veze jasne, lako možemo napraviti model za simulaciju.
+\includegraphics[width=\textwidth]{flow.png}
+
+Ovim smo predstavili jedan ciklus sistema koji se izvršava kontinualno. Sada možemo izraditi koncept modela.
+
 
 \section{Konceptualizacija modela}
 
-Kako bismo stvorili koncept modela moramo se vratiti na funkcije našeg sistema. Analizom funkcija i konkretnog hardvera pronalazimo matematički model koji predstavlja temelj naše simulacije.\\
+Kako bismo stvorili koncept modela moramo se vratiti na funkcije našeg sistema. Analizom funkcija i konkretnog hardvera pronalazimo uslove i ograničenja sistema koji modelujemo. Mi smo ranije u radu prešli rad odredjenih komponenti koje su od značaja za rad sistema, sada odredjujemo njihovu korelaciju unutar sistema. Ako pogledamo sliku PID kontrolera:
 
+\includegraphics[width=\textwidth]{feedback_block.png}
+
+zaključicemo da je naš sistem idealan primer istog.
+
+Sa leve strane imamo promenljivu $r$ koja predstavlja idealan output sistema. Naš model će se fokusirati na regulaciju temperature stoga mi želimo da nam $r$ bude vrednost unutar opsega 20-30$^\circ$C. Uzećemo 25$^\circ$C kao fiksnu vrednost. 
+
+$Plant$ ili $P(s)$ nam predstavlja sistem koji želimo kontrolisati. Možemo primetiti da on ima ulaznu vrednost($u$) koja nam utiče na izlaz $y$. Da bi sistem izvrsio validaciju on će izlazni signal da uporedi sa zadatom vrednosti. Rezultat te operacije($e$) se prosledjuje kao input kontroleru $C(s)$ koji onda na osnovu njega utiče na sistem. U našem slučaju sistem će izgledati ovako:\\
+
+\includegraphics[width=\textwidth]{feedback.png}
 
 
 
@@ -380,55 +447,15 @@ Kako bismo stvorili koncept modela moramo se vratiti na funkcije našeg sistema.
 
 Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se opredelili. Čitanjem tehničke dokumentacije ili samih specifikacija proizvoda možemo stvoriti gruba očekivanja kako će se sistem ponašati u realnim uslovima. \\
 
-\noindent Bitno je imati na umu da vredonosti koje nam proizvodjač da uglavnom nisu merodavne pa je neophodno, ukoliko je to moguće, istraživanjem utvrditi realne performanse komponente. Ukoliko nije moguće naći iste, kako bi izbegli dodatne troskove, moramo uračunati do 30\% devijacije od datih.
-
-\subsection{Regulacija temperature}
-
-Za početak neophodno je odrediti izvore toplote unutar sistema. U našem slucaju to je LED svetlo od 150W koje, bez obzira na led tehnologiju, ipak proizvodi toplotu.\\
-
-Sada moramo uvesti termin BTU\footnote{British termal unit - Po definiciji to je količina energije potrebna da se zagreje jedna funta (0.454 kg) vode tj. jedna desetina UK Galona od 39$^\circ$F (Farenhajta) na 40 $^\circ$F, tj. od 3,8 $^\circ$C (Celzijusa) do 4,4$^\circ$C. Vise na: https://sr.wikipedia.org/wiki/Btu} kako bismo lakse ordredili. Ako znamo da je 1 Watt = 3.41 BTU. Svetlo koje koristimo iznosi 150W pa opterećenje sistema iznosi ~341 BTU/h. Sledi računanje razlike ulazne i izlazne teperature vazduha. Ako pogledamo rezultate testa sistema bez aktivnog hladjenja:
+\noindent Bitno je imati na umu da vredonosti koje nam proizvodjač da uglavnom nisu merodavne pa je neophodno, ukoliko je to moguće, istraživanjem utvrditi realne performanse komponente. Ukoliko nije moguće naći iste, kako bi izbegli dodatne troskove, moramo uračunati do 30\% devijacije od datih. U ovom radu, prilikom planiranja mi smo izvršili kolekciju i obradu podataka da bi stvori plan stoga nam preostaje prevodjenje modela i izrada simulacije. Jedino sto nam preostaje jeste sistem za zalivanje koji ne utiče direktno na ambijent mašine, njega ćemo posebno simulirati putem takozvanog pilotnog projekta. 
 
 
-\begin{table}[ht]
-  \caption{Zagrevanje - bez aktivne ventilacije}
-  \centering
-  \begin{tabular}{|c|c|c|}
-  \hline
-    Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
-  0 & 25.3 & 9:48 \\ \hline
-  15 & 27.4 & 10:03 \\ \hline
-  30 & 29.1 & 10:18 \\ \hline
-  60 & 29.1 & 10:48 \\ \hline
-  \end{tabular}
-\end{table}
+\subsection{Regulacija zalivanja - pilotni projekat}
 
-Možemo uočiti da se temperatura sa sobne od 25.3$^\circ$C popela na 29.1$^\circ$C gde je stagnirala. Ako oduzmemo ove vrednosti dobićemo povećanje temperature of ~4$^\circ$C.
+Za projekat sam pronašao saksiju adekvatnih veličina za sistem. Saksija je napunjana sa $2/3$ zemlje i $1/3$ perlita čija je uloga da pomogne oko drenaže(ako za to bude potrebe). Do saksije je sprovedeno crevo po obodu sa sitnim rupicama za zalivanje. Sada preostaje razmatranje pumpe:
 
-Ako pogledamo sledeću formulu: 
-\[ CFM = BTU / (1.08 * \Delta T)\]
-
-Pa iz ovoga dobijamo da nam je potreban CFM = 78.9. Naši ventilatori iznose manje ali testom je utvrdjeno sledeće:
-
-\begin{table}[ht]
-  \caption{Zagrevanje - aktivan izduv na 40\% snage}
-  \centering
-  \begin{tabular}{|c|c|c|}
-  \hline
-    Trajanje[minut] & Temperatura[$^\circ$C] & Vreme\\ \hline
-  0 & 25.1 & 11:48 \\ \hline
-  15 & 26.5 & 12:03 \\ \hline
-  30 & 27.1 & 12:18 \\ \hline
-  60 & 27.1 & 12:48 \\ \hline
-  \end{tabular}
-\end{table}
-
-Uključivanjem ventilatora na samo 40\% postižemo sniženje temperature za 2$^\circ$C. Ako iskoristimo pun potencijal istog možemo održati sobnu temperaturu.
-
-Za naše potrebe temperatura od 20-30[$^\circ$C] je sasvim prihvatljiva što znači da je solucija za hladjenje adekvatna.
-
-\subsection{Regulacija zalivanja}
-
-Zalivanje vrši se putem pumpe za manje fontane. Po specifikaciji proizvodjača protok vode iznosi $Q = 150 l/h$. Testiranjem je utvrdjeno sledeće:
+Budući da je naš sistem relativno malih razmera koji podrzava jednu biljku neće nam biti potrebna velika pumpa. Ako se okrenemo akvaristici možemo pronaći sasvim idealnu pumpu za projekat. 
+Zalivanje vrši se putem pumpe za manje akvarijume. Po specifikaciji proizvodjača protok vode iznosi $Q = 150 l/h$. Testiranjem je utvrdjeno sledeće:
 
 \begin{table}[ht]
   \caption{Rad pumpe za vodu}
@@ -449,12 +476,6 @@ Saksija koju ćemo koristiti ovde iznosi $1.5l$ što znači da ako pogledamo tab
 
 Ovo nije optimalna količina vode ali nam pruža sigurnost od prelivanja. Pumpa će se aktivirati opet ukoliko vlažnost zemlje ne odgovara našem standardu.
 
-\subsection{Regulacija svetlosnog ciklusa}
-
-Svetlosni ciklus je definisan parametrima biljke. Biljke se razlikuju po dužini svetlosnog intervala, stoga mi ćemo uzeti "12-12" interval. 
-
-Imajući na umu da je svetlo glavni izvor toplotne energije unutar sistema, neophodno je isključiti ventilatore tokom "mračnog" perioda kako bi temperatura ostala u poželjnom opsegu.
-
 \section{Prevodjenje modela}
 
 \section{Verifikacija}
@@ -473,7 +494,9 @@ Imajući na umu da je svetlo glavni izvor toplotne energije unutar sistema, neop
 
 \section{Dokumentacija i izveštaj}
 
-\section{Implementacija}
+\chapter{Izvori}
+
+www.agropress.org - http://www.agropress.org.rs/lat/rubrike/biljna-proizvodnja/ratarstvo-i-povrtarstvo/item/1713-koje-su-prednosti-plastenicke-proizvodnje
 
 \end{document}
 

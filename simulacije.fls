@@ -196,6 +196,7 @@ INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr9.tfm
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr9.tfm
@@ -227,7 +228,6 @@ INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-ra
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\oled.png
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\oled.png
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\oled.png
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\digital-analog.jpg
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\digital-analog.jpg
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\digital-analog.jpg
@@ -241,11 +241,26 @@ INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-ra
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\flow.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\flow.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\flow.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\flow.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\flow.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback_block.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback_block.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback_block.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback_block.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback_block.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback.png
+INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\feedback.png
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
 INPUT c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out
-INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\Coa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx10.pfb
