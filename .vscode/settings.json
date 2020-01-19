@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "drawsceen.h": "c",
+        "stdlib.h": "c"
+    }
+}

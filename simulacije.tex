@@ -9,6 +9,7 @@
 \usepackage{lmodern}
 \usepackage{hyperref}
 \usepackage{listings}
+\usepackage{hyperref}
 
 
 \makeatletter
@@ -178,7 +179,7 @@ Različite biljke zahtevaju specifične svetlosne cikluse. Stoga, moramo konfigu
   \end{tabular}
 \end{table}
 
-U sledećoj tabeli\footnote{Vise o generaciji toplote na: budući da researchgate ima užasne linkove, rad ce biti na kraju.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
+U sledećoj tabeli\footnote{Vise o generaciji toplote na na kraju rada.} ćemo detaljno pogledati razliku u proizvodnji toplote izmedju različitih tipova sijalica.
 
 
 \begin{table}[ht]
@@ -282,9 +283,9 @@ Ulaze i izlaze modula kačimo direktno na kontroler. Na relej se kači svetlo, p
 
 \subsection{Pokretanje i princip rada}
 
-U inicijalnom setup petlji kontrolera inicijalizujemo sve potrebne biblioteke i promenljive. 
+U inicijalnom setup petlji kontrolera inicijalizujemo sve potrebne biblioteke i promenljive neophodne za rad. Kompleksnija rešenja zahtevaju reimplementaciju odredjenih drajvera zbog memorijskog prostora na Arduino kontroleru. Naš sistem nije velikog razmera i iz tog razloga prostor nije limitirajući faktor.\\
 
-Glavna petlja ce pratiti sledeći sablon rada:
+Kada je kontroler spreman za rad pokreće se glavna loop petlja koja će kroz svreme kontinualno vršiti kolekciju podataka i procesira ih. Glavna petlja ce pratiti sledeći sablon rada:
 
 \hrulefill
 \begin{itemize}
@@ -417,7 +418,6 @@ float read_soil_moisture(){
   }
     \end{lstlisting}
 
-
 \chapter{Izgradnja modela}
 
 Kada smo definisali plan sistema možemo započeti izradu modela. Za početak odredjujemo tok operacija koje naš sistem treba da izvrši. Imajući na umu da modelujemo kontroler sistema, možemo ga posmatrati kao automat. Po definicija automata, mi modelujemo prelaze stanja koji su elementi nekog konačnog skupa stanja Q. Stoga, osnovni tok operacija se može predstaviti flowchart-om koji izgleda ovako:
@@ -425,7 +425,6 @@ Kada smo definisali plan sistema možemo započeti izradu modela. Za početak od
 \includegraphics[width=\textwidth]{flow.png}
 
 Ovim smo predstavili jedan ciklus sistema koji se izvršava kontinualno. Sada možemo izraditi koncept modela.
-
 
 \section{Konceptualizacija modela}
 
@@ -441,14 +440,13 @@ $Plant$ ili $P(s)$ nam predstavlja sistem koji želimo kontrolisati. Možemo pri
 
 \includegraphics[width=\textwidth]{feedback.png}
 
-
+Sada sledi kolekcija podataka gde nam je cilj eliminacija što vise nepoznatih faktora.
 
 \section{Kolekcija podataka}
 
 Podatke možemo prikupiti preko samih proizvodjača komponenti za koje smo se opredelili. Čitanjem tehničke dokumentacije ili samih specifikacija proizvoda možemo stvoriti gruba očekivanja kako će se sistem ponašati u realnim uslovima. \\
 
 \noindent Bitno je imati na umu da vredonosti koje nam proizvodjač da uglavnom nisu merodavne pa je neophodno, ukoliko je to moguće, istraživanjem utvrditi realne performanse komponente. Ukoliko nije moguće naći iste, kako bi izbegli dodatne troskove, moramo uračunati do 30\% devijacije od datih. U ovom radu, prilikom planiranja mi smo izvršili kolekciju i obradu podataka da bi stvori plan stoga nam preostaje prevodjenje modela i izrada simulacije. Jedino sto nam preostaje jeste sistem za zalivanje koji ne utiče direktno na ambijent mašine, njega ćemo posebno simulirati putem takozvanog pilotnog projekta. 
-
 
 \subsection{Regulacija zalivanja - pilotni projekat}
 
@@ -494,9 +492,21 @@ Ovo nije optimalna količina vode ali nam pruža sigurnost od prelivanja. Pumpa 
 
 \section{Dokumentacija i izveštaj}
 
-\chapter{Izvori}
+\begin{thebibliography}{9}
 
-www.agropress.org - http://www.agropress.org.rs/lat/rubrike/biljna-proizvodnja/ratarstvo-i-povrtarstvo/item/1713-koje-su-prednosti-plastenicke-proizvodnje
+  \bibitem{latexcompanion} 
+  www.agropress.org - Koje su prednosti plasteničke proizvodnje?
+  \\\texttt{https://bit.ly/35PbbkT}
+
+   
+  \bibitem{knuthwebsite} 
+  General Study for using LED to replace traditional lighting devices - Y.K. Cheng, K.W.E.Cheng,
+  \\\texttt{https://www.researchgate.net/publication/224694534}
+
+  \end{thebibliography}
+
+
+
 
 \end{document}
 
