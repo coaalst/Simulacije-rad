@@ -476,15 +476,150 @@ Ovo nije optimalna količina vode ali nam pruža sigurnost od prelivanja. Pumpa 
 
 \section{Prevodjenje modela}
 
+Kao alat za simulaciju koristićemo Matlab verziju R2018a uz oslonac na Simulink za grafičko predstavljanje podataka. Prevodjenje modela moze se podeliti na definisanje parametara okruženja i izradu logike kontrolera. 
+
+\subsection{Definisanje parametara okruženja}
+
+U ovom koraku kreiramo model podataka za simulaciju
+
+Za početak je neophodno odrediti ukupno površinu okruženja sa kojom radimo. Ako se vratimo na specifikaciju jedinice možemo uvideti da su dimenzije $30*30*60$ stoga se može modelovati na sledeći način:
+
+\begin{lstlisting}
+
+  % Definisanje okruzenja
+
+  % length = 35 cm
+  len = 35;
+  % width = 35 cm
+  wid = 35;
+  % height = 60 cm
+  ht = 60;
+
+  % ukupna povrsina
+  wallArea = 2*len*ht + 2*wid*ht
+  \end{lstlisting}
+
+Da bismo odredili gubitke sa okolinom, moramo odrediti termodinamička svojstva naseg okruženja. Nas konkretno zanima izolacija, a može se predstaviti kao razlika debljine zida i koeficijenta propusta:\\
+
+\begin{lstlisting}
+% -------------------------------
+% Definisanje izolacije
+% -------------------------------
+kWall = 0.038*3600;   % jedinica za vreme je h
+
+% debljina zida
+LWall = .02;
+
+% ukupno
+RWall = LWall/(kWall*wallArea);
+\end{lstlisting}
+
+Pored ovoga ostaju nam promenljive poput protoka vazduha, gustine i mase koje se računaju na sledeci način:
+
+\begin{lstlisting}
+  % c = cp of air (273 K) = 1005.4 J/kg-K
+  c = 1005.4;
+  
+  Mdot =  3538;  % jedinica h za ukupan protok vazduha
+  
+  
+  % gustina vazduha na 0 nadmorkse visine = 1.2250 kg/m^3
+  densAir = 1.2250;
+  
+  % ukupna masa
+  M = (len*wid*ht*densAir);
+  
+  
+  % TinIC = inicijalna temperatura = 24 deg C
+  TinIC = 24;
+  \end{lstlisting}
+
+
+\subsection{Izrada logike}
+
+Sada prelazimo na Simulink deo modela. Za naš slučaj potrebna su nam tri podsistema unutar našeg PID kontrolera za regulaciju rada. Simulacija je osmišljena tako da smo uzeli rad ventilatora na 70$\%$ efektivne snage kako bismo dobili realno sliku sistema. Celokupam sistem se može modelovati na sledeći način:
+
+\includegraphics[width=\textwidth]{ceo.png}
+
+Podešavamo željenu temperaturu korišćenjem Set Point konstante koju ćemo porediti sa izlazom sistema. Greška tog poredjenja ulazi u nas prvi podsistem koji predstavlja logicku kapiju za pokretanje regulacije. Ako pogledamo dizajn ovog sistema:
+
+\includegraphics[width=\textwidth]{kont.png}
+
+Vidimo da je on zapravo običan relej sistem koji se aktivira na odredjenom toplotnom rangu. U nasem slucaju dozvolili smo varijaciju od 3 stepena. Ovaj relej daje signal sledecem sistemu koji služi za razmenu toplote sa okruženjem tako što vraća 1 za slučaj da je potrebna korekcija ili 0 ako je temperatura u dozvoljenim granicama.
+
+Sada prelazimo na sistem za hladjenje:
+
+\includegraphics[width=\textwidth]{vent.png}
+
+Uzimamo trenutnu vrednost okruženja na koju dodajemo zagrevanje pomoću lampe. Od te vrednosti oduzimamo trenutnu spoljnu temperaturu koju će ventilatori ubacivati. Nakon toga računamo toplotni modifier (promenu imajući u vidu karakteristike vazduha i protoka ventilatora). Prekidač samo množi ova dva ulaza što znači da ako jer aktivator u isključenom režimu output vazduha je 0.
+
+Sledeći sistem je zadužen za gubitke toplote kroz radijaciju.
+
+\includegraphics[width=\textwidth]{haus.png}
+
+Ovo se postiže uzimajući u obzir temperaturu vazduha koji se ubacije i izolaciju sistema. Toplotni gubitak se računa tako što od izlaza sistema oduzmemo toplotnu vrednost okruženja i provučemo je kroz filter koji dobijenu vrednost deli sa izolacijom. Ovo će se primenjivati pri svakom ciklusu.
+
+Nakon ovoga ostaje nam samo da vratimo izlaznu vrednost na početak ciklusa radi računanja greške i ispišemo je na ekran.
+
+
 \section{Verifikacija}
+
+Ovde ćemo se pozabaviti ispravnosti naseg modela. Proći ćemo kroz sisteme i verifikovati da li se implementacija poklapa sa matematičkim formulama. Ovaj korak je krucijalan za simulaciju jer obezbedjuje ispravnost rezultata.
+
+Za verifikaciju simulacije moramo sagledati simulaciju sa stanovišta podsistema. Budući da je kontroler jako jednostavan njega ćemo ignorisati.
+
+\subsection{Sistem za kontrolu ventilatora}
+
+Ako pogledamo podsistem za ubacivanje vazduha, promene temperature možemo izračunati sledećom formulom:
+
+\[ \frac{\delta Q}{\delta t} = (T_{room} - T_{current} - kT_{heat gain}) * M_{Dot} * c\]
+
+$M_{Dot}$ - protok vazduha\\
+
+Proverom vidimo da se naš dizajn poklapa sa formulom, stoga možemo reći da zadovoljava uslove.
+
+\subsection{Obračun gubitaka}
+
+Sada možemo preći na podsistem vezan za obračun temperature u jedinici. Ovde primenjujemo dve formule:
+
+\[ \frac{\delta Q}{\delta t}_{loses} = \frac{(T_{room} - T_{out})} {Req}\]
+
+gde je 
+
+\[ \frac{\delta T_{room}}{\delta t} = \frac{1} {M_{air} * c} * (\frac{\delta Q_{ventilatora}}{\delta t} -  \frac{\delta Q_{loses}}{\delta t})\]
+
+$R_{eq}$ - vrednost izolacije jedinice
+
+$M_{air}$ - količina vazduha u jedinici
+
+$c$ - termalni kapacitet vazduha pri konstantnom pritisku.\\
+
+Ako prodjemo kroz šemu vidimo da je i ovaj deo sistema korektno modelovan.
  
 \section{Validacija}
 
+Validnost modela ocenjuje se pomocu nivoa validnosti. Nivo validnost predstavlja tačnost sistema i utrvdjuje se ponavljanjem jednog skupa ishoda. Potrebno je imati na umu da ni jedan sistem se ne može savršeno prezentovati, samo je potrebno da nivo poverenja(tačnost) modela ispunjava kriterijum.
+
+Ukoliko sistem zadovoljava naše potrebe, možemo reći da je važeći ali da bismo to utvrdili neophodno je izvrsiti inicijalne simulacije. Nakon analize rezultata ukoliko nisu ispunjeni kriterijumi neophodno je vratiti se na model sistema i detaljno analizirati tok. 
+
+
 \chapter{Izvršavanje simulacije}
+
+Budući da smo za sisteme zalivanja i svetlosnog ciklusa koristili pilotne projkete jer su po prirodi jako jednostavni nije potrbeno izvršiti simulaciju rada. Iz tog razloga fokusiraćemo se samo na simulaciju sistema za regulisanje temperature. 
+
 
 \section{Dizajn eksperimenta}
 
+Eksperiment je dizajniran po specifikaciji projekta tako da smo 
 \section{Izvršavanje i analiza}
+
+Pokretanjem šeme iz Simulink-a dobijamo sledeću sliku gde je prikazana promena temperature kroz vreme(vreme je izraženo u satima):
+
+\includegraphics[width=\textwidth]{done.png}
+
+
+
+Kao što možemo videti iz rezultata, izlaz sistema odgovara našim potrebama. Budući da smo zadovoljni sa rezulatom nije potrebno vršiti izmene.
 
 \section{Dodatna izvršavanja}
 
@@ -503,11 +638,15 @@ Ovo nije optimalna količina vode ali nam pruža sigurnost od prelivanja. Pumpa 
   General Study for using LED to replace traditional lighting devices - Y.K. Cheng, K.W.E.Cheng,
   \\\texttt{https://www.researchgate.net/publication/224694534}
 
+  \bibitem{knuthwebsite} 
+  Thermal and Energy Management Based on Bimodal Airflow-Temperature Sensing and Reinforcement Learning - Zhen Zhang, Cheng Ma, Rong Zhu,
+  \\\texttt{https://www.researchgate.net/publication/321344620}
+
+  \bibitem{knuthwebsite} 
+  Thermal Model of a House
+  \\\texttt{https://ch.mathworks.com/help/simulink/slref/thermal-model-of-a-house.html}
+
   \end{thebibliography}
-
-
-
-
 \end{document}
 
 %\section*{Acknowledgements}

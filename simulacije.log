@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  14 JAN 2020 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  28 JAN 2020 22:57
 entering extended mode
 **"c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
 ("c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/simulacije.tex"
@@ -928,7 +928,14 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
- ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
+ ("c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux"
+
+LaTeX Warning: Label `knuthwebsite' multiply defined.
+
+
+LaTeX Warning: Label `knuthwebsite' multiply defined.
+
+)
 \openout1 = `simulacije.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -1002,7 +1009,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
 LaTeX Info: Redefining \nameref on input line 28.
- ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out") ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out")
+ ("c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out") ("c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.out")
 \@outlinefile=\write3
 \openout3 = `simulacije.out'.
 
@@ -1037,7 +1044,7 @@ File: omxcmsrbex.fd
 
 {C:/Users/Coa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
-] ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.toc"
+] ("c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.toc"
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
  [3])
@@ -1079,12 +1086,12 @@ Underfull \hbox (badness 4205) in paragraph at lines 98--98
 [][][]\T1/lmr/m/n/9 AC in-fi-ni-ty je kom-pa-ni-ja ko-ja se ba-vi so-lu-ci-ja-ma za hla-dje-nje, vi-se na:
  []
 
-<10060.jpg, id=207, 702.625pt x 325.215pt>
+<10060.jpg, id=227, 702.625pt x 325.215pt>
 File: 10060.jpg Graphic file (type jpg)
 <use 10060.jpg>
 Package pdftex.def Info: 10060.jpg  used on input line 100.
 (pdftex.def)             Requested size: 360.0pt x 166.63158pt.
-<9015.jpg, id=208, 702.625pt x 325.215pt>
+<9015.jpg, id=228, 702.625pt x 325.215pt>
 File: 9015.jpg Graphic file (type jpg)
 <use 9015.jpg>
 Package pdftex.def Info: 9015.jpg  used on input line 101.
@@ -1095,7 +1102,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 100--102
  []
 
 [8 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/10060.jpg> <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/9015.jpg>]
-<uno_pinout.png, id=218, 803.0pt x 803.0pt>
+<uno_pinout.png, id=238, 803.0pt x 803.0pt>
 File: uno_pinout.png Graphic file (type png)
 <use uno_pinout.png>
 Package pdftex.def Info: uno_pinout.png  used on input line 110.
@@ -1113,7 +1120,7 @@ Underfull \hbox (badness 2689) in paragraph at lines 113--113
 [][][]\T1/lmr/m/n/9 I2C pro-to-kol slu-ºi za se-rij-sku ko-mu-ni-ka-ci-ju sa mi-kro-kon-tro-le-ri-ma. Vi-se na:
  []
 
-<oled.png, id=226, 1156.32pt x 979.66pt>
+<oled.png, id=246, 1156.32pt x 979.66pt>
 File: oled.png Graphic file (type png)
 <use oled.png>
 Package pdftex.def Info: oled.png  used on input line 115.
@@ -1132,7 +1139,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
  []
 
 [11 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/oled.png>]
-<digital-analog.jpg, id=239, 441.8106pt x 261.1356pt>
+<digital-analog.jpg, id=259, 441.8106pt x 261.1356pt>
 File: digital-analog.jpg Graphic file (type jpg)
 <use digital-analog.jpg>
 Package pdftex.def Info: digital-analog.jpg  used on input line 142.
@@ -1163,7 +1170,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
  []
 
 [15]
-<kontroler.png, id=270, 469.755pt x 321.45094pt>
+<kontroler.png, id=290, 469.755pt x 321.45094pt>
 File: kontroler.png Graphic file (type png)
 <use kontroler.png>
 Package pdftex.def Info: kontroler.png  used on input line 278.
@@ -1212,7 +1219,7 @@ Overfull \hbox (1.35292pt too wide) in paragraph at lines 402--404
 
 ]
 Glava 2.
-<flow.png, id=388, 344.03531pt x 549.55313pt>
+<flow.png, id=408, 344.03531pt x 549.55313pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 425.
@@ -1229,7 +1236,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/flow.png>]
-<feedback_block.png, id=397, 232.2276pt x 97.8054pt>
+<feedback_block.png, id=417, 232.2276pt x 97.8054pt>
 File: feedback_block.png Graphic file (type png)
 <use feedback_block.png>
 Package pdftex.def Info: feedback_block.png  used on input line 433.
@@ -1244,7 +1251,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
-<feedback.png, id=398, 232.2276pt x 97.8054pt>
+<feedback.png, id=418, 232.2276pt x 97.8054pt>
 File: feedback.png Graphic file (type png)
 <use feedback.png>
 Package pdftex.def Info: feedback.png  used on input line 441.
@@ -1259,39 +1266,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
-[24] [25] [26
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
-]
-Glava 3.
-[27] [28
+ []
 
-]
-Glava 4.
+[25]
+Overfull \hbox (14.49303pt too wide) in paragraph at lines 526--527
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<ceo.png, id=457, 733.99219pt x 314.67563pt>
+File: ceo.png Graphic file (type png)
+<use ceo.png>
+Package pdftex.def Info: ceo.png  used on input line 542.
+(pdftex.def)             Requested size: 360.0pt x 154.34125pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 542--543
+[][] 
+ []
+
+<kont.png, id=458, 268.00125pt x 149.8097pt>
+File: kont.png Graphic file (type png)
+<use kont.png>
+Package pdftex.def Info: kont.png  used on input line 546.
+(pdftex.def)             Requested size: 360.0pt x 201.2354pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 546--547
+[][] 
+ []
+
+
+Underfull \vbox (badness 2717) has occurred while \output is active []
+
+ [26 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/ceo.png>]
+<vent.png, id=479, 587.19376pt x 220.57407pt>
+File: vent.png Graphic file (type png)
+<use vent.png>
+Package pdftex.def Info: vent.png  used on input line 552.
+(pdftex.def)             Requested size: 360.0pt x 135.22984pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 552--553
+[][] 
+ []
+
+<haus.png, id=480, 531.48563pt x 225.09094pt>
+File: haus.png Graphic file (type png)
+<use haus.png>
+Package pdftex.def Info: haus.png  used on input line 558.
+(pdftex.def)             Requested size: 360.0pt x 152.4656pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 558--559
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/kont.png> <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/vent.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
+
+ []
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 581.
+
+[28 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/haus.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
 [29] [30
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 511.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 511.
- ("c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 511.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 511.
+Glava 3.
+<done.png, id=498, 478.78876pt x 246.1697pt>
+File: done.png Graphic file (type png)
+<use done.png>
+Package pdftex.def Info: done.png  used on input line 618.
+(pdftex.def)             Requested size: 360.0pt x 185.09633pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 618--619
+[][] 
+ []
+
+[31 <c:/Users/Coa/Desktop/faks/modeli i simulacije/rad_simulacije/Simulacije-rad/done.png>] [32]
+Glava 4.
+[33
+
+] [34
+
+]
+Underfull \hbox (badness 4328) in paragraph at lines 642--644
+[]\T1/lmr/m/n/10.95 Thermal and Ener-gy Ma-na-ge-ment Ba-sed on Bi-mo-dal Airflow-
+ []
+
+
+Overfull \hbox (82.43956pt too wide) in paragraph at lines 646--648
+\T1/lmtt/m/n/10.95 https://ch.mathworks.com/help/simulink/slref/thermal-model-of-a-house.html 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 650.
+[35pdfTeX warning (ext4): destination with the same identifier (name{cite.knuthwebsite}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.650 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier (name{cite.knuthwebsite}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.650 \end{document}
+                    ]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 650.
+ ("c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 650.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 650.
 Package rerunfilecheck Info: File `simulacije.out' has not changed.
-(rerunfilecheck)             Checksum: C71CF085B989F0CB2CDF9409675A0E67;2160.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 511.
+(rerunfilecheck)             Checksum: 5B66F0A1C332C170D68A4BFAC1E67D2F;2470.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 650.
  ) 
 Here is how much of TeX's memory you used:
- 9439 strings out of 492483
- 138486 string characters out of 3122494
- 228489 words of memory out of 3000000
- 13398 multiletter control sequences out of 15000+200000
+ 9522 strings out of 492483
+ 139630 string characters out of 3122494
+ 228534 words of memory out of 3000000
+ 13427 multiletter control sequences out of 15000+200000
  75686 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,36p,727b,1804s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "c:/Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (31 pages, 1443345 bytes).
+{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Coa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on "c:\Users\Coa\Desktop\faks\modeli i simulacije\rad_simulacije\Simulacije-rad\simulacije.pdf" (35 pages, 1568752 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 178 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 
