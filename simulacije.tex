@@ -21,7 +21,8 @@
   {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
 \makeatother
 
-\title{\Huge \textbf{Modelovanje autonomnog sistema za kompaktan uzgoj biljaka} \\ \huge Modelovanje i simulacije}
+\title{\Huge \textbf{Modelovanje autonomnog sistema za kompaktan uzgoj biljaka} \\ \textsc{Modelovanje i simulacije} \\
+\huge Profesor: Dr Ljubomir Lazić}
 \author{\textsc{Aleksandar Stojanović RN97-2018}}
 
 
@@ -57,10 +58,6 @@ Dok nam tradicionalan pristup uzgoju olakšava logistiku i nudi dosta pogodnije 
 Pored otkrivanja problema omogućava nam optimizaciju procesa uzgoja što dovodi do efikasnije proizvodnje. Pod ovim se podrazumeva uzgoj bilja vrhunskog kvaliteta i visokog prinosa u celogodišnjoj proizvodnji bez ograničenja u pogledu sezone ili optimalnih uslova gajenja, kako u atmosferi tako i u zoni ukorenjavanja gajenih biljaka. Precizna, manuelna ili automatska kontrola temperature i relativna vlažnost vazduha, provetravanje, ishrana i navodnjavanje i održavanje idealnog vodnog i vazdušnog režima zemljišta ili supstrata doprinosi eliminisanju ili maksimalnom smanjenju potencijalnog rizika.
 
 \chapter{Priprema}
-
-%\begin{chapquote}{Author's name, \textit{Source of this quote}}
-%``This is a quote and I don't know who said this.''
-%\end{chapquote}
 
 \section{Definisanje problema}
 Dakle, naš cilj je izrada autonomne jedinice koja radi bez čovekovog prisustva. Kako bismo to postigli moramo se osloniti na nekakvu upravljačku jedinicu koja ce biti zadužena za kontrolu celokupnog sistema uz oslonac na senzore. 
@@ -206,7 +203,6 @@ Kada gledamo snagu svetla, preporučeno je koristiti minimum
 gde je optimalno 50W a maksimalno 80W. Ako pogledamo prostor sistema koji iznosi 1225$cm^2$ što je $~$1.40$ft^2$, biće dovoljno koristiti LED svetlo snage 150W (efektivno oko 100W) sa ugradjenim hladnjakom.\\
 
 Sada moramo uvesti termin BTU\footnote{British termal unit - Po definiciji to je količina energije potrebna da se zagreje jedna funta (0.454 kg) vode tj. jedna desetina UK Galona od 39$^\circ$F (Farenhajta) na 40 $^\circ$F, tj. od 3,8 $^\circ$C (Celzijusa) do 4,4$^\circ$C. Vise na: https://sr.wikipedia.org/wiki/Btu}. Ako znamo da je 1 Watt = 3.41 BTU. Svetlo koje koristimo iznosi 100W pa opterećenje sistema iznosi ~341 BTU/h. Sledi računanje razlike ulazne i izlazne teperature vazduha. Ako pogledamo rezultate testa sistema bez aktivnog hladjenja:
-
 
 \begin{table}[ht]
   \caption{Zagrevanje - bez aktivne ventilacije}
@@ -537,7 +533,7 @@ Pored ovoga ostaju nam promenljive poput protoka vazduha, gustine i mase koje se
 
 \subsection{Izrada logike}
 
-Sada prelazimo na Simulink deo modela. Za naš slučaj potrebna su nam tri podsistema unutar našeg PID kontrolera za regulaciju rada. Simulacija je osmišljena tako da smo uzeli rad ventilatora na 70$\%$ efektivne snage kako bismo dobili realno sliku sistema. Celokupam sistem se može modelovati na sledeći način:
+Sada prelazimo na Simulink deo modela. Za naš slučaj potrebna su nam tri podsistema unutar našeg PID kontrolera za regulaciju rada. Simulacija je osmišljena tako da smo uzeli rad ventilatora na 80$\%$ efektivne snage kako bismo dobili realno sliku sistema. Takodje, neophodno je napomenuti da smo za referentnu temperaturu koristili vrednost od 25$^\circ$C. Celokupam sistem se može modelovati na sledeći način:
 
 \includegraphics[width=\textwidth]{ceo.png}
 
@@ -605,35 +601,93 @@ Ukoliko sistem zadovoljava naše potrebe, možemo reći da je važeći ali da bi
 
 \chapter{Izvršavanje simulacije}
 
-Budući da smo za sisteme zalivanja i svetlosnog ciklusa koristili pilotne projkete jer su po prirodi jako jednostavni nije potrbeno izvršiti simulaciju rada. Iz tog razloga fokusiraćemo se samo na simulaciju sistema za regulisanje temperature. 
+Ovo poglavlje posvećeno je izvršavanju simulacije rada i analizu njenih rezultata. 
 
+Budući da smo za sistem zalivanja koristili pilotni projekat jer je po prirodi jako jednostavan nije potrbeno izvršiti simulaciju. Iz tog razloga fokusiraćemo se samo na simulaciju sistema za regulisanje temperature. 
 
-\section{Dizajn eksperimenta}
-
-Eksperiment je dizajniran po specifikaciji projekta tako da smo 
 \section{Izvršavanje i analiza}
 
-Pokretanjem šeme iz Simulink-a dobijamo sledeću sliku gde je prikazana promena temperature kroz vreme(vreme je izraženo u satima):
+Pokretanjem šeme koju smo konstruisali iz Simulink-a dobijamo sledeću sliku:\\
 
 \includegraphics[width=\textwidth]{done.png}
 
+Ako se vratimo na šemu, gornji grafik predstavlja izolovanu temperaturu unutar jedinice. Na njemu je prikazana oscilacija temperature koja varira izmedju vrednosti 22 i 25$^\circ$C. Budući da smo uračunali hladjenja okruženja(ciklus dan-noć) i brzina ventilatora postavljena na realnu vrednost, rezultati se ne poklapaju sa prethodno izvršenim testovima(zagrevanje jedinice). 
 
+Druga slika prestavlja preklopljene vrednosti spoljašnje temperature i temperature unutar jedinice gde možemo videti kako unutrašnja(žuta) prati spoljašnju(plava).
 
-Kao što možemo videti iz rezultata, izlaz sistema odgovara našim potrebama. Budući da smo zadovoljni sa rezulatom nije potrebno vršiti izmene.
+Kao što možemo videti iz rezultata, izlaz sistema odgovara našim potrebama.
 
-\section{Dodatna izvršavanja}
+\section{Dodatno izvršavanje}
+
+Promena parametara za različite biljke.
+
+\subsection{Povećanje temperature}
+
+Sada ćemo podići granicu na 27$^\circ$C:
+
+\includegraphics[width=\textwidth]{done27.png}
+
+Promenom zadate temperature menja se interval na kom se aktivira relej za pokretanje ventilatora što dovodi do veće temperature unutar jedinice. Sistem se ponaša u skladu sa očekivanjima stoga možemo reći da je validan.\\
+
+\subsection{Smanjivanje temperature}
+
+Testiranjem je utvrdjeno da sistem zavisi od okruženja što se hladjenja tiče. Unutrašnja temperatura ne može biti niža od spoljašnje te je neophodno voditi računa gde se sistem postavlja. Svako testiranje izvršeno gde je temperatura postavljnjena ispod temperature ambijenta pokazalo je da temperatura ne može biti manja od temperature okruženja.
 
 \chapter{Implementacija}
 
-\section{Dokumentacija i izveštaj}
+U ovom poglavlju posvetićemo se implementaciji modela. Proći ćemo preko rešenja mogućih problema i prepreka koje nismo naveli u radu. Ovo znatno ubrza proces konstrukcije i olaksava korišćenje i održavanje sistema.
+
+Dokumentacija je podeljena u dve sekcije gde je jedna namenjena hardveru a druga softveru sistema.
+
+\section{Dokumentacija hardvera}
+
+\subsection{Izolacija}
+Kod samo izrade sistema mora se voditi računa o izolaciji jer je ključna za održavanje temperature. Ovaj sistem je konkretno namenjen za unutrašnju upotrebu. Iz tog razloga nije bila glavni prioritet tokom izrade.
+
+\subsection{Električna kola}
+
+Pored izolacije neophodno je povesti računa o izradi kola unutar sistema. Sistem osigurati od kratkih spojeva i ostalih problema koji se mogu prouzrokovati nepravilnom implementacijom.
+
+U ovom radu, korišćena je razvodna kutija koja je sama po sebi namenjena za upotrebu u električnim instalacijama a sve konekcije su izolovane sa izolir trakom.
+
+\subsection{Pumpa za vodu}
+
+Pumpa mora biti potopljenja skroz kako ne bi došlo do kvara. U ovom radu nismo opisali mehanizam za regulisanje ovog problema stoga je neophodna implementacija sistema koji će sprečiti zalivanje ukoliko nema dovoljno vode u posudi. Ovo se može rešiti odredjivanjem broja zalivanja koja se mogu uspešno izvršiti izmedju dopune i tipe postaviti softverski prekid.
+
+\subsection{Zvučna izolacija}
+
+Rad ventilatora može dovesti do primetnih vibracija pogotovo u metalnom okruženju. Ovo se može rešiti korišćenjem gumenih traka ili zaptivki prilikom instalacije.
+
+\subsection{Pozicioniranje senzora temperature}
+
+Ukoliko je senzor postavljen blizu usisa ili zaklonjen biljkom očitane vrednosti neće biti merodavne. Postaviti ga i visini biljke za optimalne uslove.
+
+\subsection{Regulacija svetlosnog ciklusa}
+
+Može se uprostiti korišćenjem tajmera koji je podešen na inverval koji želimo. Ovo olakšava rutiranje kablova i izbegava moguće probleme prilikom sastavljanja sistema (specifično povezivanje na relej).
+
+
+\section{Dokumentacija softvera}
+
+Softver je pokriven komentarima koji opisuju funkciju. Njima su pokrivene promenljive koje ista prima i njihov povratni tip tako da ćemo se ovde pozabaviti sa mogućim problemima koji spomenuti.
+
+\subsection{Čitanje vlage}
+
+Jako je bitno izvšiti kalibraciju senzora. U našoj funkciji, promenljiva \lstinline{SOIL_MOISTURE_TRESHOLD} je podešena po vrednosti koju je senzor vraćao za odgovarajući nivo vlage.\\
+
+U kodu nije implementirana provera da li je senyor prikačen. Povesti računa o pravilnom konektovanju senzora jer ako se odkači kontroler će i dalje primati vrednosti koje nisu ispravne.
+
+\subsection{Ispis na ekran}
+
+Voditi računa o veličini buffera prilikom ispisa.
+
 
 \begin{thebibliography}{9}
 
   \bibitem{latexcompanion} 
   www.agropress.org - Koje su prednosti plasteničke proizvodnje?
   \\\texttt{https://bit.ly/35PbbkT}
-
-   
+  
   \bibitem{knuthwebsite} 
   General Study for using LED to replace traditional lighting devices - Y.K. Cheng, K.W.E.Cheng,
   \\\texttt{https://www.researchgate.net/publication/224694534}
@@ -646,36 +700,16 @@ Kao što možemo videti iz rezultata, izlaz sistema odgovara našim potrebama. B
   Thermal Model of a House
   \\\texttt{https://ch.mathworks.com/help/simulink/slref/thermal-model-of-a-house.html}
 
+  \bibitem{knuthwebsite} 
+  Modeling and simulations fundimentals - Theoretical Underpinnings and Practical Domains
+
+  \bibitem{knuthwebsite} 
+  Uvod u MATLAB - Katedra za Vazduhoplovstvo 2019.\\
+  Nikola G. Raicevic, Miloš D. Petrašinovic
+  
+  \bibitem{knuthwebsite} 
+  Modelovanje i simulacija električnih sistema u programskom paketu Matlab/Simscape\\
+  Suzana Cvetković, br. indeksa 24
+
   \end{thebibliography}
 \end{document}
-
-%\section*{Acknowledgements}
-%\begin{itemize}
-%\item A special word of thanks goes to Professor Don Knuth\footnote{\url{http://www-cs-faculty.stanford.edu/~uno/}} (for \TeX{}) and Leslie Lamport\footnote{\url{http://www.lamport.org/}} (for \LaTeX{}).
-%\item I'll also like to thank Gummi\footnote{\url{http://gummi.midnightcoding.org/}} developers and LaTeXila\footnote{\url{http://projects.gnome.org/latexila/}} development team for their awesome \LaTeX{} editors.
-%\item I'm deeply indebted my parents, colleagues and friends for their support and encouragement.
-%\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Sample table                                        %
-% Source: www1.maths.leeds.ac.uk/latex/TableHelp1.pdf %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{table}[ht]
- % \caption{Sample table} % title of Table
-  %\centering % used for centering table
-  %\begin{tabular}{c c c c}
-  % centered columns (4 columns)
-  %\hline\hline %inserts double horizontal lines
-  %S. No. & Column\#1 & Column\#2 & Column\#3 \\ [0.5ex]
-  % inserts table
-  %heading
-  %\hline % inserts single horizontal line
-  %1 & 50 & 837 & 970 \\
-  %2 & 47 & 877 & 230 \\
-  %3 & 31 & 25 & 415 \\
-  % & 35 & 144 & 2356 \\
-  %5 & 45 & 300 & 556 \\ [1ex] % [1ex] adds vertical space
-  %\hline %inserts single line
-  %\end{tabular}
-  %\label{table:nonlin} % is used to refer this table in the text
-  %\end{table}
